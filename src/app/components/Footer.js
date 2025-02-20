@@ -20,7 +20,7 @@ export default function Footer({ className }) {
         },
         {
             name: "Repo",
-            href: "https://github.com/anthskti/Personal-Website",
+            href: "https://github.com/anthskti/pw-main",
             icon: CodeXml,
         }
     ];
@@ -34,7 +34,7 @@ export default function Footer({ className }) {
                       <a 
                         key={index}
                         href={link.href}
-                        className="group flex items-center hover:text-neutral-800"
+                        className="group flex items-center hover:text-neutral-800 dark:hover:text-neutral-200"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
