@@ -31,7 +31,7 @@ export default function Link({
       before:z-[2]
       hover:before:opacity-100
       hover:text-stone-100 dark:hover:text-stone-100
-      hover:before:[animation:sweep_2s_ease-in-out_infinite]
+      hover:before:[animation:sweep_2s_ease-in-out]
     `}
     ${className}
   `.trim();
@@ -49,14 +49,14 @@ export default function Link({
                 transform: scaleX(1);
                 transform-origin: left;
             }
-            50.1% {
-                transform: scaleX(1);
-                transform-origin: right;
-            }
-            100% {
-                transform: scaleX(0);
-                transform-origin: right;
-            }
+            // 50.1% {
+            //     transform: scaleX(1);
+            //     transform-origin: right;
+            // }
+            // 100% {
+            //     transform: scaleX(0);
+            //     transform-origin: right;
+            // }
         }
       `}</style>
       {isNextLink ? (

@@ -9,21 +9,21 @@ export default function Header() {
 
     const links = [
         {
-          name: "about",
+          name: "About",
           href: "/",
           isActive: pathname === "/",
           isNextLink: true,
         },
         {
-          name: "projects",
+          name: "Projects",
           href: "/projects",
           isActive: pathname === "/projects",
           isNextLink: true,
         },
         {
-          name: "writing",
-          href: "/writing",
-          isActive: pathname.startsWith("/writing"),
+          name: "Journal",
+          href: "/journal",
+          isActive: pathname.startsWith("/journal"),
           isNextLink: true,
         },
     ];
@@ -33,7 +33,7 @@ export default function Header() {
         <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
           <Link href="/" isNextLink={true}>Anthony Pham</Link>
         </h1>
-        <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold"></h1>
+        <h1 className="text-neutral-700 dark:text-neutral-300 font-myraid"></h1>
         <HorizontalNav links={links} />
       </div>
 
