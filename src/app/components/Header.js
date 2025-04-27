@@ -21,9 +21,9 @@ export default function Header() {
           isNextLink: true,
         },
         {
-          name: "Journal",
-          href: "/journal",
-          isActive: pathname.startsWith("/journal"),
+          name: "More",
+          href: "/more",
+          isActive: pathname === "/more",
           isNextLink: true,
         },
     ];
@@ -31,7 +31,7 @@ export default function Header() {
     return (
       <div className="flex justify-between items-center">
         <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
-          <Link href="/" isNextLink={true}>Anthony Pham</Link>
+          <Link href="/" isNextLink={true}>AP</Link>
         </h1>
         <h1 className="text-neutral-700 dark:text-neutral-300 font-myraid"></h1>
         <HorizontalNav links={links} />
