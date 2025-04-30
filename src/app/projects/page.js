@@ -1,16 +1,21 @@
 "use client";
 
+// modular 
+import ProjectList from "../components/ProjectList";
+
+// react
 import { useState } from "react";
+import { Search } from "lucide-react";
 
 export default function Projects() {
     const projects = [
         {
-            title: "Stock Predictor",
+            title: "ML Stock Predictor",
             href: "https://github.com/anthskti/LSTM-Stock-Predictor",
             description:
                 "Will tomorrow's stock price be higher than today's closing price? An LSTM model trains to find this outcome by looking at the previous year's stock data, then with trading patterns such as SMA's, RSI's, VWAP, and Fibonacci Retracement Levels, it can make a prediction on whether the stock price will be higher or lower than today.",
             image: "",
-            technologies:["Python, Pandas, NumPy, YFinance Library, Plotly, Scikit-learn, Tensorflow "],
+            technologies:["Python", "Pandas", "NumPy", "YFinance", "Plotly", "scikit-learn", "Tensorflow"],
             github:"https://github.com/anthskti/LSTM-Stock-Predictor",
             demo: "",
         },
@@ -30,7 +35,7 @@ export default function Projects() {
             description:
                 "Chat and Share Stories Anonymously. Designed for sharing our perspectives, created a full-stacks application where users can publicly post notes on a map or privately send stories for advice and receieve stories giving advice to other anonymous users.",
             image: "",
-            technologies: ["Javascript, React.js, Vue.js, CSS, Python, Google Maps API"],
+            technologies: ["Javascript", "React.js", "Vue.js", "CSS", "Python", "Google Maps API"],
             github: "https://github.com/tvirat/UofTHacks12",
             demo: "",
         },
@@ -38,21 +43,42 @@ export default function Projects() {
             title: "SCHIZO",
             href: "",
             description:
-                "A game designed for ",
+                "A game designed to bring awareness to schizophrenia. As a player, recently diagonised with schizophrenia, your goal is to maintain your insanity score. Dealing with reality versus delusions, how do you keep your sanity in check?",
             image: "",
-            technologies: [""],
-            github: "",
+            technologies: ["Godot", "Blender"],
+            github: "https://github.com/sciausu/Ctrl-Hack-Del",
             demo: "",
         },
-        
-
-
     ];
+
+    // for search 
+    const [searchTerm, setSearchTerm] = useState("");
+    
+    const filterProjects = (projects, term) => {
+        const lower = term.toLowerCase();
+        return projects.filter(
+            (project) =>
+                project.title.toLowerCase().includes(lower) || 
+                project.description.toLowerCase().includes(lower) ||
+                project.technologies.some((technology) =>
+                    technology.toLowerCase().includes(lower)
+            )
+        );
+    };
 
     return (
         <div className="flex flex-col items-center max-w-2xl mx-auto p-4">
-
-
+            <div className="relative w-full pb-4">
+                <Search className="absolute top-2.5 left-3" />
+                <input
+                    type="text"
+                    placeholder="Search for a Project..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full py-2 px-4 border-2 rounded-xl bg-transparent focus:outline-none focus:border-violet-500 pl-10"
+                />
+            </div>
+            <ProjectList projects={filterProjects(projects, searchTerm)} />
         </div>
     );
 }

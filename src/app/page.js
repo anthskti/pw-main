@@ -6,6 +6,7 @@ import NextLink from "next/link";
 import Myself from "@/app/assets/me.png"
 import YorkULogo from "@/app/components/icons/YorkULogo.png";
 import { useState } from "react";
+import { Sword } from "lucide-react";
 
 // Main Page - About Me
 
@@ -84,7 +85,8 @@ export default function About() {
       <NextLink
         href="/resume.pdf"
         className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-200 hover:bg-stone-600 hover:text-white transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
-        check out my resume!
+        check out my resume! {""}
+        <Sword className="size-5 inline align-top ml-1" />
       </NextLink>
 
         
