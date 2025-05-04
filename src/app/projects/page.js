@@ -2,6 +2,7 @@
 
 // modular 
 import ProjectList from "../components/ProjectList";
+import Link from "../components/Link";
 
 // react
 import { useState } from "react";
@@ -10,13 +11,13 @@ import { Search } from "lucide-react";
 export default function Projects() {
     const projects = [
         {
-            title: "ML Stock Predictor",
-            href: "https://github.com/anthskti/LSTM-Stock-Predictor",
+            title: "Trace",
+            href: "https://github.com/anthskti/Trace",
             description:
                 "Will tomorrow's stock price be higher than today's closing price? An LSTM model trains to find this outcome by looking at the previous year's stock data, then with trading patterns such as SMA's, RSI's, VWAP, and Fibonacci Retracement Levels, it can make a prediction on whether the stock price will be higher or lower than today.",
             image: "",
-            technologies:["Python", "Pandas", "NumPy", "YFinance", "Plotly", "scikit-learn", "Tensorflow"],
-            github:"https://github.com/anthskti/LSTM-Stock-Predictor",
+            technologies:["Python", "Pandas", "YFinance", "Plotly", "Tensorflow"],
+            github:"https://github.com/anthskti/Trace",
             demo: "",
         },
         {
@@ -67,7 +68,7 @@ export default function Projects() {
     };
 
     return (
-        <div className="flex flex-col items-center max-w-2xl mx-auto p-4">
+        <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
             <div className="relative w-full pb-4">
                 <Search className="absolute top-2.5 left-3" />
                 <input
@@ -79,6 +80,13 @@ export default function Projects() {
                 />
             </div>
             <ProjectList projects={filterProjects(projects, searchTerm)} />
+            <p className=" relative pb w-full pt-4 text-stone-400"> 
+                Check out all my projects {" "}
+                <Link href="https://github.com/anthskti?tab=repositories">
+                here
+                </Link>
+                !
+            </p>
         </div>
     );
 }

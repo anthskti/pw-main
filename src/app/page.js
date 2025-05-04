@@ -12,7 +12,7 @@ import { Sword } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center max-w-2xl mx-auto p-4">
+    <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
       
       {/* Pic of Me */}
       <div className="flex flex-col items-center m-5"> 
@@ -27,7 +27,8 @@ export default function About() {
       </div>
       
       <header className="text-xl text-left w-full max-w-2xl">
-        Hey, I'm Anthony Pham
+        Hey there, I'm {""}
+        <span className="font-bold">Anthony</span>
       </header>
 
       {/* List Section */}
@@ -76,7 +77,7 @@ export default function About() {
             </li>
             <li className="relative flex items-start gap-2 group/item">
               <span className="text-stone-600 dark:text-stone-400">
-                I made a <Link href="https://github.com/anthskti/LSTM-Stock-Predictor" className="font-medium"> ML Stock Predictor</Link> used to predict a stock value.
+                I made a ML Stock Predicted called <Link href="https://github.com/anthskti/Trace" className="font-medium">Trace</Link> used to predict a stock value.
               </span>
             </li>
           </ul>  
