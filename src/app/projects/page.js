@@ -8,6 +8,9 @@ import Link from "../components/Link";
 import { useState } from "react";
 import { Search } from "lucide-react";
 
+// images
+import percept from "../assets/percept.jpg";
+
 export default function Projects() {
     const projects = [
         {
@@ -35,8 +38,8 @@ export default function Projects() {
             href: "https://github.com/tvirat/UofTHacks12",
             description:
                 "Chat and Share Stories Anonymously. Designed for sharing our perspectives, created a full-stacks application where users can publicly post notes on a map or privately send stories for advice and receieve stories giving advice to other anonymous users.",
-            image: "",
-            technologies: ["Javascript", "React.js", "Vue.js", "CSS", "Python", "Google Maps API"],
+            image: percept,
+            technologies: ["Javascript", "React", "Vue.js", "CSS", "Python", "Flask", "Google Maps API"],
             github: "https://github.com/tvirat/UofTHacks12",
             demo: "",
         },
@@ -73,7 +76,7 @@ export default function Projects() {
                 <Search className="absolute top-2.5 left-3" />
                 <input
                     type="text"
-                    placeholder="Search for a Project..."
+                    placeholder="Search for a Project/Technology..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full py-2 px-4 border-2 rounded-xl bg-transparent focus:outline-none focus:border-violet-500 pl-10"

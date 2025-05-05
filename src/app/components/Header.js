@@ -21,9 +21,9 @@ export default function Header() {
           isNextLink: true,
         },
         {
-          name: "More",
-          href: "/more",
-          isActive: pathname === "/more",
+          name: "Archive",
+          href: "/archive",
+          isActive: pathname === "/archive",
           isNextLink: true,
         },
     ];

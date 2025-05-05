@@ -72,12 +72,12 @@ export default function About() {
             </li>
             <li className="relative flex items-start gap-2 group/item">
               <span className="text-stone-600 dark:text-stone-400">
-                I've been building my personal website and planning fullstacks start-up for skincare organization.
+                I've been building my personal website and planning a fullstacks start-up for skincare organization.
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
               <span className="text-stone-600 dark:text-stone-400">
-                I made a ML Stock Predicted called <Link href="https://github.com/anthskti/Trace" className="font-medium">Trace</Link> used to predict a stock value.
+                I made a ML Stock Predicter called <Link href="https://github.com/anthskti/Trace" className="font-medium">Trace</Link> used to predict a stock value.
               </span>
             </li>
           </ul>  
