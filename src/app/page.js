@@ -85,8 +85,8 @@ export default function About() {
       </ul>
       <NextLink
         href="/resume.pdf"
-        className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-200 hover:bg-stone-600 hover:text-white transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
-        check out my resume! {""}
+        className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-200 hover:bg-violet-500 hover:text-purple transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
+        check out my resume!{" "}
         <Sword className="size-5 inline align-top ml-1" />
       </NextLink>
 
