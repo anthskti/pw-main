@@ -4,7 +4,7 @@ import Link from "./Link";
 
 
 
-// images
+// image
 import fallback from "../assets/mybias.jpg";
 
 const shimmer = `
@@ -36,7 +36,6 @@ export default function ProjectCard({
     technologies,
     github,
     demo,
-    className,
 
 }) {
     return (
