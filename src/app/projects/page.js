@@ -49,7 +49,7 @@ export default function Projects() {
             description:
                 "A game designed to bring awareness to schizophrenia. As a player, recently diagonised with schizophrenia, your goal is to maintain your insanity score. Dealing with reality versus delusions, how do you keep your sanity in check?",
             image: "",
-            technologies: ["Godot", "Blender"],
+            technologies: ["Godot", "Blender", "Aesprite"],
             github: "https://github.com/sciausu/Ctrl-Hack-Del",
             demo: "",
         },
