@@ -6,8 +6,7 @@ export const meta = {
     description: "A breakdown of why I started to code.",
     status: "Published",
   };
-
-<MdxLayout>
+  
 
 # Why I Started Coding
 
@@ -39,5 +38,7 @@ This all changed last year, going to my first proper hackathon, my eyes finally 
 
 I think I'm really into UI/UX design, especially having a more creative background with video editing, yet, having all this logistic knowledge of computer science, my goal is to become a self-sufficient full-stack developer. 
 
-</MdxLayout>
+export default function MDXPage({ children }) {
+  return <MdxLayout>{children}</MdxLayout>
 
+}

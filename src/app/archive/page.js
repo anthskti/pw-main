@@ -1,8 +1,5 @@
-// "use client";
-
 import fs from "fs";
 import path from "path";
-
 import Link from "../components/Link";
 
 
@@ -18,10 +15,9 @@ export default async function archive() {
         .map((entry) => entry.name);
 
     // Load each MDX file with its metadata, for main page
-    
     const posts = await Promise.all(
         folderNames.map(async (folderName) => {
-            const { meta } = await import (`../archive/${folderName}/page.mdx`);
+            const { meta } = await import(`../archive/${folderName}/page.mdx`);
             return { ...meta, slug: folderName };
         })
     );
