@@ -6,9 +6,10 @@ const nextConfig = {
 };
 
 const withMDX = createMDX({
+  extension: /\.mdx?$/,
   options: {
-    providerImportSource: "@mdx-js/react",
-  },
+    providerImportSource: "@mdx-js/react", // lets metadata + layout
+  }, 
 });
 
 export default withMDX(nextConfig);
