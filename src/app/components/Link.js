@@ -8,7 +8,7 @@ export default function Link({
     isActive, 
     isNextLink, 
     children}) {
-        const baseStyles = `
+  const baseStyles = `
     relative
     inline-flex items-center
     text-stone-300 dark:text-stone-300
