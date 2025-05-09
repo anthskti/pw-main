@@ -8,9 +8,6 @@ export default {
   darkmode: 'class',
   theme: {
     extend: {
-      fontFamily: {
-        myriad: ['Myriad Pro'],
-      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

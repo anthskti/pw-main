@@ -25,25 +25,36 @@ export default async function Writing() {
   // Sort posts by date (most recent first)
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   return (
-    <>
-      <ul className="list-disc list-inside space-y-2 text-stone-600 dark:text-stone-400">
-        {posts.map(({ title, date, slug }) => (
-          <li className="flex justify-between items-center" key={slug}>
-            <span className="font-semibold text-stone-800 dark:text-stone-200 text-sm sm:text-base">
-              <Link href={`/archive/${slug}`} isNextLink={true}>
-                {title}
-              </Link>
+    <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
+      <header className="text-2xl text-left w-full font-bold mb-2">📝 Archive</header>
+      <p className="text-neutral-600 dark:text-neutral-400 mb-4 w-full">
+            An archive of my goals, failures, and lessons.
+        </p>
+      <ul className="w-full space-y-6 text-stone-600 dark:text-stone-400">
+        {/* posts */}
+        {posts.map(({ title, date, description, status, slug }) => (
+          <li key={slug} className="group">
+            <div className="flex justify-between items-center">
+              <span className="text-lg font-semibold text-stone-800 dark:text-stone-200">
+                <Link href={`/archive/${slug}`} isNextLink={true}>
+                  {title}
+                </Link>
+              </span>
+              <time className="text-sm text-stone-500 dark:text-stone-500">
+                {new Date(date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </time>
+            </div>
+            <p className="text-sm mt-2 text-neutral-600 dark:text-neutral-400">{description}</p>
+            <span className="text-xs inline-block mt-1 px-2 py-0.5 rounded-md bg-yellow-200 text-yellow-800 dark:bg-yellow-700 dark:text-yellow-100">
+              {status}
             </span>
-            <time className="text-stone-500 dark:text-stone-500 text-sm">
-              {new Date(date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              })}
-            </time>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
