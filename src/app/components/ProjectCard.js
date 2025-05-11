@@ -3,12 +3,8 @@ import Image from "next/image";
 import Link from "./Link";
 
 
-
-// image
-import fallback from "../assets/mybias.jpg";
-
 const shimmer = `
-<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="g">
       <stop stop-color="#333" offset="20%" />
@@ -19,8 +15,7 @@ const shimmer = `
   <rect width="100%" height="100%" fill="#333" />
   <rect id="r" width="100%" height="100%" fill="url(#g)" />
   <animate xlink:href="#r" attributeName="x" from="-100%" to="100%" dur="1s" repeatCount="indefinite"  />
-</svg>
-`;
+</svg>`;
 
 const toBase64 = (str) =>
   typeof window === "undefined"
@@ -43,9 +38,9 @@ export default function ProjectCard({
             {/* Image w/ shimmer and hover animation */}
             <div className="relative">
                 <Image 
-                    src={image || fallback}
-                    alt={title}
+                    src={image}
                     placeholder={`data:image/svg+xml;base64,${toBase64(shimmer)}`}
+                    alt={title}
                     className="rounded-t-xl w-full h-[200px] group-hover:h-[275px] object-cover object-center transition-all duration-[400ms]"
                 />
             </div>
@@ -53,7 +48,7 @@ export default function ProjectCard({
             <div className="p-4">
                 <div className="flex justify-between items-start gap-4">
                     <div> 
-                        <Link href={`${href}`} className="font-semibold text-xl">
+                        <Link href={`${href}`} className="font-semibold text-2xl">
                         {title}
                         </Link>
                         <p className="text-400 mt-2 text-stone-300 leading-relaxed">{description}</p>

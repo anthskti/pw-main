@@ -9,7 +9,9 @@ import { useState } from "react";
 import { Search } from "lucide-react";
 
 // images
-import percept from "../assets/percept.jpg";
+import percept from "../assets/projects/percept.jpg";
+
+import fallback from "../assets/projects/mybias.jpg";
 
 export default function Projects() {
     const projects = [
@@ -18,7 +20,7 @@ export default function Projects() {
             href: "https://github.com/anthskti/Trace",
             description:
                 "Will tomorrow's stock price be higher than today's closing price? An LSTM model trains to find this outcome by looking at the previous year's stock data, then with trading patterns such as SMA's, RSI's, VWAP, and Fibonacci Retracement Levels, it can make a prediction on whether the stock price will be higher or lower than today.",
-            image: "",
+            image: fallback,
             technologies:["Python", "Pandas", "YFinance", "Plotly", "Tensorflow"],
             github:"https://github.com/anthskti/Trace",
             demo: "",
@@ -28,8 +30,8 @@ export default function Projects() {
             href: "",
             description:
                 "Designed, developed, and tested a parking system software for YorkU. Designed various diagrams (UseCase, Sequence, Class, Activity, Component). In development, used software design strategies implementing design patterns (creational, behavioural, structural). After implementing the code, we refractor, optimized, and tested it using several different methods: manual testing, automatic testing (randoop), and search based testing (evosuite). Also calculating mutation score thorugh pitclipse.",
-            image: "",
-            technologies: ["Java"],
+            image: fallback,
+            technologies: ["Java", "Randoop", "Evosuite"],
             github: "",
             demo: "",
         },
@@ -45,10 +47,10 @@ export default function Projects() {
         },
         {
             title: "SCHIZO",
-            href: "",
+            href: "https://github.com/sciausu/Ctrl-Hack-Del",
             description:
                 "A game designed to bring awareness to schizophrenia. As a player, recently diagonised with schizophrenia, your goal is to maintain your insanity score. Dealing with reality versus delusions, how do you keep your sanity in check?",
-            image: "",
+            image: fallback,
             technologies: ["Godot", "Blender", "Aesprite"],
             github: "https://github.com/sciausu/Ctrl-Hack-Del",
             demo: "",
