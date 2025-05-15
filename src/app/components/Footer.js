@@ -26,8 +26,8 @@ export default function Footer({ className }) {
     ];
 
     return (
-        <footer className={`flex flex-col gap-4 text-sm text-stone-500 dark:text-stone-400 ${className}`}>
-            <hr className="border-b border-neutral-200" />
+        <footer className={`flex flex-col gap-4 text-sm text-stone-700 dark:text-stone-400 ${className}`}>
+            <hr className="border-b border-stone-500 dark:border-neutral-200" />
             <div className="flex flex-row justify-between gap-4">
                 <div className="flex flex-wrap gap-4">
                     {links.map((link, index) => (

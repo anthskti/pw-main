@@ -49,7 +49,7 @@ export default async function Writing() {
               </time>
             </div>
             <p className="text-sm mt-2 text-neutral-600 dark:text-neutral-400">{description}</p>
-            <span className="text-xs inline-block mt-1 px-2 py-0.5 rounded-md bg-yellow-200 text-yellow-800 dark:bg-yellow-700 dark:text-yellow-100">
+            <span className="text-xs inline-block mt-1 px-2 py-1 rounded-md bg-amber-200 text-yellow-800 dark:bg-violet-500 dark:text-yellow-100">
               {status}
             </span>
           </li>

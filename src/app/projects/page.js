@@ -31,7 +31,7 @@ export default function Projects() {
             description:
                 "Designed, developed, and tested a parking system software for YorkU. Designed various diagrams (UseCase, Sequence, Class, Activity, Component). In development, used software design strategies implementing design patterns (creational, behavioural, structural). After implementing the code, we refractor, optimized, and tested it using several different methods: manual testing, automatic testing (randoop), and search based testing (evosuite). Also calculating mutation score thorugh pitclipse.",
             image: fallback,
-            technologies: ["Java", "Randoop", "Evosuite"],
+            technologies: ["Java", "JUnit", "Randoop", "Evosuite"],
             github: "",
             demo: "",
         },
@@ -41,7 +41,7 @@ export default function Projects() {
             description:
                 "Chat and Share Stories Anonymously. Designed for sharing our perspectives, created a full-stacks application where users can publicly post notes on a map or privately send stories for advice and receieve stories giving advice to other anonymous users.",
             image: percept,
-            technologies: ["Javascript", "React", "Vue.js", "CSS", "Python", "Flask", "Google Maps API"],
+            technologies: ["Javascript", "React", "Vite.js", "CSS", "Python", "Flask", "Google Maps API"],
             github: "https://github.com/tvirat/UofTHacks12",
             demo: "",
         },
@@ -51,7 +51,7 @@ export default function Projects() {
             description:
                 "A game designed to bring awareness to schizophrenia. As a player, recently diagonised with schizophrenia, your goal is to maintain your insanity score. Dealing with reality versus delusions, how do you keep your sanity in check?",
             image: fallback,
-            technologies: ["Godot", "Blender", "Aesprite"],
+            technologies: ["Godot", "Blender", "Aseprite"],
             github: "https://github.com/sciausu/Ctrl-Hack-Del",
             demo: "",
         },
@@ -75,13 +75,13 @@ export default function Projects() {
     return (
         <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
             <div className="relative w-full pb-4">
-                <Search className="absolute top-2.5 left-3" />
+                <Search className="absolute top-2.5 left-3 text-stone-700 dark:text-stone-100" />
                 <input
                     type="text"
                     placeholder="Search for a Project/Technology..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full py-2 px-4 border-2 rounded-xl bg-transparent focus:outline-none focus:border-violet-500 pl-10"
+                    className="w-full py-2 px-4 border-2 rounded-xl bg-transparent border-stone-700 dark:border-stone-100 focus:outline-none focus:border-amber-300 dark:focus:border-violet-500 pl-10 shadow-md"
                 />
             </div>
             <ProjectList projects={filterProjects(projects, searchTerm)} />

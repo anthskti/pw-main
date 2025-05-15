@@ -34,7 +34,7 @@ export default function ProjectCard({
 
 }) {
     return (
-        <div className={`group bg-neutral-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300`}>
+        <div className={`group bg-neutral-100 dark:bg-neutral-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300`}>
             {/* Image w/ shimmer and hover animation */}
             <div className="relative">
                 <Image 
@@ -51,12 +51,12 @@ export default function ProjectCard({
                         <Link href={`${href}`} className="font-semibold text-2xl">
                         {title}
                         </Link>
-                        <p className="text-400 mt-2 text-stone-300 leading-relaxed">{description}</p>
+                        <p className="mt-2 text-stone-700 dark:text-stone-300 leading-relaxed">{description}</p>
                         <div className="flex flex-wrap gap-2 mt-4">
                             {technologies.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="text-xs px-2 py-1 rounded-lg bg-neutral-700 text-neutral-300"
+                                    className="text-xs px-2 py-1 rounded-lg bg-amber-200 dark:bg-violet-500 text-stone-600 dark:text-neutral-300"
                                 >
                                 {tech}
                                 </span>
@@ -69,7 +69,7 @@ export default function ProjectCard({
                                 href={github}
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="p-2 rounded-xl text-neutral-400 hover:bg-neutral-700 transition-colors"
+                                className="p-2 rounded-xl text-neutral-700 dark:text-neutral-400 hover:bg-stone-200 dark:hover:bg-neutral-700 transition-colors"
                             >
                                 <Github className="w-5 h-5" />
                             </a>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "./components/Link";
 import NextLink from "next/link";
-import Myself from "@/app/assets/me.png"
+import Myself from "@/app/assets/me.png";
 import YorkULogo from "@/app/components/icons/YorkULogo.png";
 import { useState } from "react";
 import { Sword } from "lucide-react";
@@ -16,7 +16,7 @@ export default function About() {
       
       {/* Pic of Me */}
       <div className="flex flex-col items-center m-5"> 
-        <div className="w-48 h-48 relative rounded-xl border-2 border-stone-200 overflow-hidden transform transition-all duration-300 hover:scale-[1.01]">
+        <div className="w-48 h-48 relative rounded-xl border-2 border-stone-700 dark:border-stone-200 overflow-hidden transform transition-all duration-300 hover:scale-[1.01] shadow-sm hover:shadow-md">
           <Image 
             src = {Myself}
             alt = "Anthony Pham Picture"
@@ -28,7 +28,7 @@ export default function About() {
       
       <header className="text-xl text-left w-full max-w-2xl">
         Hey there, I'm {""}
-        <span className="font-bold">Anthony</span>
+        <span className="font-bold">Anthony!</span>
       </header>
 
       {/* List Section */}
@@ -38,7 +38,7 @@ export default function About() {
           {/* bullet point to plus point */}
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
-          <span className="text-stone-600 dark:text-stone-400">
+          <span className="text-stone-700 dark:text-stone-400">
             A passionate creator, looking at working in Full-Stacks, wanting to leverage my skills to create impactful applications. 
           </span>            
         </li>
@@ -47,7 +47,7 @@ export default function About() {
           {/* bullet point to plus point */}
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
-          <span className="text-stone-600 dark:text-stone-400">
+          <span className="text-stone-700 dark:text-stone-400">
             I'm studying Computer Science at Lassonde School of Engineering in {" "} 
             <span className="inline-flex items-baseline gap-1">
               <Image src={YorkULogo} alt="Yorku Logo" width={15} height={15} className="object-contain relative top-[2px]" />
@@ -60,23 +60,23 @@ export default function About() {
           {/* bullet point to plus point */}
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
-          <span className="text-stone-600 dark:text-stone-400 font-medium">
+          <span className="text-stone-700 dark:text-stone-400 font-medium">
             Recently:
           </span>  
              {/* inside jots for what I've been upto*/}
           <ul className="grid gap-1 text-myriad pl-4">
             <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-600 dark:text-stone-400">
+              <span className="text-stone-700 dark:text-stone-400">
                 I've been working part-time at Costco Wholesale; do your <Link href="https://costcodle.com/" className="font-medium">Costcodle</Link> today.
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-600 dark:text-stone-400">
-                I've been building my personal website and planning a fullstacks start-up for skincare organization.
+              <span className="text-stone-700 dark:text-stone-400">
+                I've been updating my personal website and making an ai healthcare cat chatbot with my friend.
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-600 dark:text-stone-400">
+              <span className="text-stone-700 dark:text-stone-400">
                 I made a ML Stock Predicter called <Link href="https://github.com/anthskti/Trace" className="font-medium">Trace</Link> used to predict a stock value.
               </span>
             </li>
@@ -85,12 +85,12 @@ export default function About() {
       </ul>
       <NextLink
         href="/resume.pdf"
-        className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-200 hover:bg-violet-500 hover:text-purple transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-700 dark:border-stone-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-purple transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md">
         check out my resume!{" "}
         <Sword className="size-5 inline align-top ml-1" />
       </NextLink>
-
-        
     </div>
   );
 }
