@@ -5,6 +5,9 @@ import {useEffect, useState } from "react";
 import HorizontalNav from "./HorizontalNav";
 import Link from "./Link";
 import { Sun, Moon } from "lucide-react";
+import Image from "next/image";
+import favicon from "@/app/favicon.ico";
+import NextLink from "next/link";
 
 export default function Header() {
 
@@ -54,6 +57,11 @@ export default function Header() {
       <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
         <Link href="/" isNextLink={true}>AP</Link>
       </h1>
+      {/* <Image 
+          src={favicon}
+          alt="AP"
+          className="w-12"
+        /> */}
       <h1 className="text-neutral-700 dark:text-neutral-300 font-myraid"></h1>
       <div className="flex flex-row gap-6">
         <HorizontalNav links={links} />

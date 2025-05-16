@@ -27,13 +27,13 @@ export default function Projects() {
         },
         {
             title: "YorkU Parking System",
-            href: "",
+            href: "https://drive.google.com/drive/folders/1uqICs_W09mz5QFKfc1bJXwjGduYyLclF?usp=drive_link",
             description:
                 "Designed, developed, and tested a parking system software for YorkU. Designed various diagrams (UseCase, Sequence, Class, Activity, Component). In development, used software design strategies implementing design patterns (creational, behavioural, structural). After implementing the code, we refractor, optimized, and tested it using several different methods: manual testing, automatic testing (randoop), and search based testing (evosuite). Also calculating mutation score thorugh pitclipse.",
             image: fallback,
             technologies: ["Java", "JUnit", "Randoop", "Evosuite"],
             github: "",
-            demo: "",
+            demo: "https://drive.google.com/drive/folders/1uqICs_W09mz5QFKfc1bJXwjGduYyLclF?usp=drive_link",
         },
         {
             title: "Percept",
