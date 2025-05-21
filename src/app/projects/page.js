@@ -10,6 +10,7 @@ import { Search } from "lucide-react";
 
 // images
 import percept from "../assets/projects/percept.jpg";
+import traceDemo from "../assets/projects/trace-demo.gif";
 
 import fallback from "../assets/projects/mybias.jpg";
 
@@ -20,7 +21,7 @@ export default function Projects() {
             href: "https://github.com/anthskti/Trace",
             description:
                 "Will tomorrow's stock price be higher than today's closing price? An LSTM model trains to find this outcome by looking at the previous year's stock data, then with trading patterns such as SMA's, RSI's, VWAP, and Fibonacci Retracement Levels, it can make a prediction on whether the stock price will be higher or lower than today.",
-            image: fallback,
+            image: traceDemo,
             technologies:["Python", "Pandas", "YFinance", "Plotly", "Tensorflow"],
             github:"https://github.com/anthskti/Trace",
             demo: "",
