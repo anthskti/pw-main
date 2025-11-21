@@ -124,7 +124,7 @@ export default function About() {
         </li>
       </ul>
       <NextLink
-        href="/AnthonyPhamResume.pdf"
+        href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-700 dark:border-stone-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-purple transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md"

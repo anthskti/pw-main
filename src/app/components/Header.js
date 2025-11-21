@@ -60,25 +60,27 @@ export default function Header() {
       {/* <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
         <Link href="/" isNextLink={true}>AP</Link>
       </h1> */}
-      <Link>
+      <NextLink href="/" >
         <Image 
             src={isDark ? InitialLight : InitialDark}
             alt="AP"
-            className="w-12"
-            href="/"
+            className="w-12 transform transition-all duration-300 hover:scale-[1.07]"
           />
-      </Link>
+      </NextLink>
       <h1 className="text-neutral-700 dark:text-neutral-300 font-myraid"></h1>
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-row gap-2">
         <HorizontalNav links={links} />
-
         {/* Light Mode Toggle */}
+        <span className="flex items-center">
+          {isDark ? <Moon className="h-3 w-3" /> : <Sun className="h-3 w-3" />}
+        </span>
         <button
           onClick={toggleTheme}
-          className={`w-10 h-6 flex items-center bg-amber-300 dark:bg-violet-500 rounded-full p-1 transition-all duration-300 
-            ${isDark ? 'justify-end' : 'justify-start'}`}
+          className="w-10 h-6 flex items-center bg-amber-300 dark:bg-violet-500 rounded-full p-1 transition-all duration-300"
         >
-          {isDark === true ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+          <span
+            className={`flex top-1 h-4 w-4 rounded-full bg-white transition-transform duration-300 ${isDark ? "translate-x-0" : "translate-x-4"}`} 
+          />
         </button>
       </div>
     </div>

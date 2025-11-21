@@ -59,12 +59,37 @@ export default function ProjectCard({
             </div>
             {/* Card Content: Title, Desc, Technologies, Github, and Demo*/}
             <div className="p-4">
-                <div className="flex justify-between items-start gap-4">
-                    <div> 
-                        <Link href={`${href}`} className="font-semibold text-2xl">
-                        {title}
-                        </Link>
-                        <p className="mt-2 text-stone-700 dark:text-stone-300 leading-relaxed">{description}</p>
+                <div className="flex flex-col gap-2">
+                    <div className="flex justify-between items-start gap-4">
+                        <div> 
+                            <Link href={`${href}`} className="font-semibold text-2xl">
+                            {title}
+                            </Link>
+                        </div>
+                        <div className="flex gap-2">
+                            {github && (
+                                <a
+                                    href={github}
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="p-2 rounded-xl text-neutral-700 dark:text-neutral-400 hover:bg-stone-200 dark:hover:bg-neutral-700 transition-colors"
+                                >
+                                    <Github className="w-5 h-5" />
+                                </a>
+                            )}
+                            {demo && (
+                                <a
+                                    href={demo}
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="p-2 rounded-xl text-neutral-400 hover:ng-neutral-700 transition-colors"
+                                >
+                                    <SquareArrowOutUpRight className="w-5 h-5" />
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                    <p className="mt-2 text-stone-700 dark:text-stone-300 leading-relaxed">{description}</p>
                         <div className="flex flex-wrap gap-2 mt-4">
                             {technologies.map((tech, index) => (
                                 <span
@@ -75,29 +100,6 @@ export default function ProjectCard({
                                 </span>
                             ))}
                         </div>
-                    </div>
-                    <div className="flex gap-2">
-                        {github && (
-                            <a
-                                href={github}
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-xl text-neutral-700 dark:text-neutral-400 hover:bg-stone-200 dark:hover:bg-neutral-700 transition-colors"
-                            >
-                                <Github className="w-5 h-5" />
-                            </a>
-                        )}
-                        {demo && (
-                            <a
-                                href={demo}
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-xl text-neutral-400 hover:ng-neutral-700 transition-colors"
-                            >
-                                <SquareArrowOutUpRight className="w-5 h-5" />
-                            </a>
-                        )}
-                    </div>
                 </div>
             </div>
         </div>
