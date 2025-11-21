@@ -9,6 +9,9 @@ import Image from "next/image";
 import favicon from "@/app/favicon.ico";
 import NextLink from "next/link";
 
+import InitialLight from "@/app/assets/initial1.png";
+import InitialDark from "@/app/assets/initial2.png";
+
 export default function Header() {
 
   const [isDark, setIsDark] = useState(false);
@@ -54,14 +57,17 @@ export default function Header() {
 
   return (
     <div className="flex justify-between items-center">
-      <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
+      {/* <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
         <Link href="/" isNextLink={true}>AP</Link>
-      </h1>
-      {/* <Image 
-          src={favicon}
-          alt="AP"
-          className="w-12"
-        /> */}
+      </h1> */}
+      <Link>
+        <Image 
+            src={isDark ? InitialLight : InitialDark}
+            alt="AP"
+            className="w-12"
+            href="/"
+          />
+      </Link>
       <h1 className="text-neutral-700 dark:text-neutral-300 font-myraid"></h1>
       <div className="flex flex-row gap-6">
         <HorizontalNav links={links} />

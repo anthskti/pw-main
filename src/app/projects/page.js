@@ -14,19 +14,66 @@ import percept from "../assets/projects/percept.jpg";
 import yorkuparking from "../assets/projects/yorkuparking.png";
 import traceDemo from "../assets/projects/trace-demo.gif";
 import powerrange from "../assets/projects/powerrangepage.png";
+import katana from "../assets/projects/katanathumbnail.png";
+// import touchless from "/videos/touchlessvid1.mp4"; For next.js, have to put in public can't import.
 import temp from "../assets/projects/temp.png";
 
 
 export default function Projects() {
   const projects = [
     {
-      title: "Touchless",
-      href: "https://powerrange.vercel.app/",
+      title: "Tag Team Summer Trials",
+      href: "https://github.com/anthskti/SummerTrials",
       description:
-        "Inspired by an Invisible UI, ",
-      image: temp ,
+        `
+          A 2D single player game, where the player will have different levels to complete. 
+          The player can control both a Sakuti (penguin) and Kitspii (elephant), tag team style. 
+          The objective is to get both characters to the finish line, however, there are many obstacles blocking the two characters. 
+          There will be a timer with a badge rating, to fit a racing theme. 
+          Demo will be available on December 10!!! 
+        `,
+      image: temp,
       technologies: [
-        "",
+        "Puzzle / Racing Game",
+        "Godot",
+        "GDscript",
+        "Pixilart",
+      ],
+      github: "https://github.com/anthskti/SummerTrials",
+    },
+    {
+      title: "The Final Breath",
+      href: "https://youtu.be/yG9tJz8P99w",
+      description:
+        `
+          3D modeled a virtual environment made with Unreal Engine 5.6.
+          Following the concept from the popular anime "Demon Slayer"; a storage room following life after the demons. 
+        `,
+      image: katana,
+      technologies: [
+        "Unreal Engine 5",
+        "Adobe After Effects",
+      ],
+      demo: "https://youtu.be/yG9tJz8P99w",
+    },
+    {
+      title: "Touchless",
+      href: "https://wondrous-menu-617557.framer.app/",
+      description:
+        `
+          An Invisible UI that allows users to operate their devices with hand gestures. 
+          Using Python's OpenCV along with Google Media Handpipe, we designed a gesture controlled application by emulating the keyboard the gestures shown below. 
+          With specific hand gestures: ✌️ Quit, 👍 Next Slide, 👎 Previous Slide, 🤘 Scroll Up, 🤙 Scroll Down, 👌 Start Slideshow, and ✋ Stop Slideshow.
+          Adding voice control and live note taking, used ElevenLabs STT for natural language commands and automatic note-taking on cue.
+        `,
+      image: "/videos/touchlessvid1.mp4",
+      technologies: [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "pyautogui",
+        "Eleven Labs API",
+        "Google STT",
       ],
       github: "https://github.com/najmasultani/Invisible-UI",
       demo: "https://wondrous-menu-617557.framer.app/",
@@ -35,7 +82,10 @@ export default function Projects() {
       title: "PowerRange",
       href: "https://powerrange.vercel.app/",
       description:
-        "PowerRange is a full-stack e-commerce platform for car sales, featuring a microservices architecture, secure JWT authentication, Stripe-powered payments, and real-time sales analytics. Note: Backend is not live currently",
+        `
+          PowerRange is a full-stack e-commerce platform for car sales, featuring a microservices architecture, secure JWT authentication, Stripe-powered payments, and real-time sales analytics. 
+          Note: Due to finacial reasons, backend is not live currently. Frontend Demo is still available.
+        `,
       image: powerrange,
       technologies: [
         "Java",
@@ -45,7 +95,7 @@ export default function Projects() {
         "React",
         "PostgreSQL",
         "Docker",
-        "AWS",
+        "AWS EC2",
       ],
       github: "https://github.com/anthskti/Trace",
       demo: "https://powerrange.vercel.app/",
@@ -54,9 +104,20 @@ export default function Projects() {
       title: "Trace",
       href: "https://github.com/anthskti/Trace",
       description:
-        "Will tomorrow's stock price be higher than today's closing price? An LSTM model trains to find this outcome by looking at the previous year's stock data, then with trading patterns such as SMA's, RSI's, VWAP, and Fibonacci Retracement Levels, it can make a prediction on whether the stock price will be higher or lower than today.",
+        `
+          Will tomorrow's stock price be higher than today's closing price? 
+          A Long Short Term Model (LSTM) trained on past stock information from Yahoo Finances API and popular analytical trends to find the outcome of tomorrows stock price.
+          Analysis by using one year of previous stock information and popular known trading patterns, such the 5, 20, 50 Day Simple Moving Averages (SMA), Relative Strength Index (RSI), Volume-Weighted Average Price(VWAP), and Fibonacci Retracement Levels.
+          Using Plotly, plots all existing data from the analysis for visualization.
+        `,
       image: traceDemo,
-      technologies: ["Python", "Pandas", "YFinance", "Plotly", "Tensorflow"],
+      technologies: [
+        "Python", 
+        "Pandas", 
+        "YFinance", 
+        "Plotly", 
+        "Tensorflow"
+      ],
       github: "https://github.com/anthskti/Trace",
       demo: "",
     },
@@ -64,7 +125,10 @@ export default function Projects() {
       title: "YorkU Parking System",
       href: "https://drive.google.com/drive/folders/1uqICs_W09mz5QFKfc1bJXwjGduYyLclF?usp=drive_link",
       description:
-        "Designed, developed, and tested a parking system software for YorkU. Designed various diagrams (UseCase, Sequence, Class, Activity, Component). In development, used software design strategies implementing design patterns (creational, behavioural, structural). After implementing the code, we refractor, optimized, and tested it using several different methods: manual testing, automatic testing (randoop), and search based testing (evosuite). Also calculating mutation score thorugh pitclipse.",
+        `
+          Developed and tested a parking system software for YorkU. Designed various diagrams (UseCase, Sequence, Class, Activity, Component). 
+          In development, used software design strategies implementing design patterns (creational, behavioural, structural). After implementing the code, we refractor, optimized, and tested it using several different methods: manual testing, automatic testing (randoop), and search based testing (evosuite). Also calculating mutation score thorugh pitclipse.
+        `,
       image: yorkuparking,
       technologies: ["Java", "JUnit", "Randoop", "Evosuite"],
       github: "",
@@ -74,12 +138,17 @@ export default function Projects() {
       title: "Percept",
       href: "https://github.com/tvirat/UofTHacks12",
       description:
-        "Chat and Share Stories Anonymously. Designed for sharing our perspectives, created a full-stacks application where users can publicly post notes on a map or privately send stories for advice and receieve stories giving advice to other anonymous users.",
+        `
+        Chat and Share Stories Anonymously. 
+        Developed with Python...
+        
+        Designed for sharing our perspectives, created a full-stacks application where users can publicly post notes on a map or privately send stories for advice and receieve stories giving advice to other anonymous users.
+        `,
       image: percept,
       technologies: [
         "Javascript",
         "React",
-        "Vite.js",
+        "Vite",
         "CSS",
         "Python",
         "Flask",
@@ -92,12 +161,17 @@ export default function Projects() {
       title: "SCHIZO",
       href: "https://github.com/sciausu/Ctrl-Hack-Del",
       description:
-        "A game designed to bring awareness to schizophrenia. As a player, recently diagonised with schizophrenia, your goal is to maintain your insanity score. Dealing with reality versus delusions, how do you keep your sanity in check?",
+        `
+        A game designed to bring awareness to schizophrenia. 
+        As a player, recently diagonised with schizophrenia, your goal is to maintain your insanity score. 
+        Dealing with reality versus delusions, how do you keep your sanity in check?
+        `,
       image: schizo,
       technologies: ["Godot", "Blender", "Aseprite"],
       github: "https://github.com/sciausu/Ctrl-Hack-Del",
       demo: "",
     },
+  
   ];
 
   // for search

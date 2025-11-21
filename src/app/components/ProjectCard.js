@@ -31,18 +31,31 @@ export default function ProjectCard({
     technologies,
     github,
     demo,
-
 }) {
+    const src = typeof image === "string" ? image : image.src;
+    const isVideo = src.endsWith(".mp4");
+
     return (
         <div className={`group bg-neutral-100 dark:bg-neutral-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300`}>
             {/* Image w/ shimmer and hover animation */}
             <div className="relative">
-                <Image 
-                    src={image}
-                    placeholder={`data:image/svg+xml;base64,${toBase64(shimmer)}`}
-                    alt={title}
-                    className="rounded-t-xl w-full h-[200px] group-hover:h-[275px] object-cover object-center transition-all duration-[400ms]"
-                />
+                {isVideo ? (
+                    <video
+                        src={image}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="rounded-t-xl w-full h-[200px] group-hover:h-[275px] object-cover object-center transition-all duration-[400ms]"
+                    />
+                ) : (
+                    <Image 
+                        src={image}
+                        placeholder={`data:image/svg+xml;base64,${toBase64(shimmer)}`}
+                        alt={title}
+                        className="rounded-t-xl w-full h-[200px] group-hover:h-[275px] object-cover object-center transition-all duration-[400ms]"
+                    />
+                )}
             </div>
             {/* Card Content: Title, Desc, Technologies, Github, and Demo*/}
             <div className="p-4">

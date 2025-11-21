@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "./components/Link";
 import NextLink from "next/link";
 import Myself from "@/app/assets/me.png";
-import MyselfLassonde from "@/app/assets/me.jpg";
+import Myself2 from "@/app/assets/meafterhackathon.png";
 import YorkULogo from "@/app/components/icons/YorkULogo.png";
 import { useState } from "react";
 import { Sword } from "lucide-react";
+
+// import resume from "resume.pdf";
 
 // Main Page - About Me
 
@@ -18,7 +20,7 @@ export default function About() {
       <div className="flex flex-col items-center m-5">
         <div className="w-48 h-48 relative rounded-xl border-2 border-stone-700 dark:border-stone-200 overflow-hidden transform transition-all duration-300 hover:scale-[1.01] shadow-sm hover:shadow-md">
           <Image
-            src={Myself}
+            src={Myself2}
             alt="Anthony Pham Picture"
             fill
             className="object-cover object-top"
@@ -122,7 +124,7 @@ export default function About() {
         </li>
       </ul>
       <NextLink
-        href="/AnthonySeptResume2025.pdf"
+        href="/AnthonyPhamResume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-700 dark:border-stone-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-purple transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md"
