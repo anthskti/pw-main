@@ -14,11 +14,23 @@ import percept from "../assets/projects/percept.jpg";
 import yorkuparking from "../assets/projects/yorkuparking.png";
 import traceDemo from "../assets/projects/trace-demo.gif";
 import powerrange from "../assets/projects/powerrangepage.png";
+import temp from "../assets/projects/temp.png";
 
-import fallback from "../assets/projects/mybias.jpg";
 
 export default function Projects() {
   const projects = [
+    {
+      title: "Touchless",
+      href: "https://powerrange.vercel.app/",
+      description:
+        "Inspired by an Invisible UI, ",
+      image: temp ,
+      technologies: [
+        "",
+      ],
+      github: "https://github.com/najmasultani/Invisible-UI",
+      demo: "https://wondrous-menu-617557.framer.app/",
+    },
     {
       title: "PowerRange",
       href: "https://powerrange.vercel.app/",
@@ -36,7 +48,7 @@ export default function Projects() {
         "AWS",
       ],
       github: "https://github.com/anthskti/Trace",
-      demo: "",
+      demo: "https://powerrange.vercel.app/",
     },
     {
       title: "Trace",
