@@ -43,8 +43,8 @@ export default function About() {
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
           <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
           <span className="text-stone-700 dark:text-stone-400">
-            Software engineer and fullstacks development. My goals is to make my
-            ideas turn to reality.
+            Software engineering and fullstacks development. My goals is to make
+            my ideas turn to reality.
           </span>
         </li>
         {/* School */}
@@ -80,44 +80,51 @@ export default function About() {
           <ul className="grid gap-1 text-myriad pl-4">
             <li className="relative flex items-start gap-2 group/item">
               <span className="text-stone-700 dark:text-stone-400">
-                Self developing a skincare website organizer, be ready for it.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-700 dark:text-stone-400">
-                In a team of four, created PowerRange, a electric vehicle
-                e-commerence platform.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-700 dark:text-stone-400">
-                Working part-time at Costco Wholesale; do your{" "}
-                <Link href="https://costcodle.com/" className="font-medium">
-                  Costcodle
-                </Link>{" "}
-                today.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-700 dark:text-stone-400">
-                Making an AI healthcare cat chatbot with my friend.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <span className="text-stone-700 dark:text-stone-400">
-                Previously made a ML Stock Predicter called{" "}
+                Self-developed a skincare website organizer, although continuing
+                to work on it. Check it out at{" "}
                 <Link
-                  href="https://github.com/anthskti/Trace"
+                  href="https://clear-up.vercel.app/"
                   className="font-medium"
                 >
-                  Trace
-                </Link>{" "}
-                used to predict a stock value.
+                  ClearUp
+                </Link>
+                !
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
               <span className="text-stone-700 dark:text-stone-400">
-                Been practicing martial arts with my best friend.
+                Shipped an Electric Vehicle E-commerce Platform in three months,
+                check out the frontend demo at {""}
+                <Link
+                  href="https://powerrange.vercel.app/"
+                  className="font-medium"
+                >
+                  PowerRange
+                </Link>
+                .
+              </span>
+            </li>
+            <li className="relative flex items-start gap-2 group/item">
+              <span className="text-stone-700 dark:text-stone-400">
+                Involved in a school capstone project working with real
+                partners. More info soon!
+              </span>
+            </li>
+            <li className="relative flex items-start gap-2 group/item">
+              <span className="text-stone-700 dark:text-stone-400">
+                Developing a 3D asset model generator, fabFab, for free lance
+                game developers.
+              </span>
+            </li>
+            <li className="relative flex items-start gap-2 group/item">
+              <span className="text-stone-700 dark:text-stone-400">
+                Learning more about fiancial literacy and long-term investing.
+              </span>
+            </li>
+            <li className="relative flex items-start gap-2 group/item">
+              <span className="text-stone-700 dark:text-stone-400">
+                Moving towards living a healthier lifestyle with practicing
+                martial arts.
               </span>
             </li>
           </ul>
