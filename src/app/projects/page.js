@@ -15,24 +15,45 @@ import yorkuparking from "../assets/projects/yorkuparking.png";
 import traceDemo from "../assets/projects/trace-demo.gif";
 import powerrange from "../assets/projects/powerrangepage.png";
 import katana from "../assets/projects/katanathumbnail.png";
-// import touchless from "/videos/touchlessvid1.mp4"; For next.js, have to put in public can't import.
+// import touchless from "/videos/touchlessvid1.mp4"; 
 import temp from "../assets/projects/temp.png";
+import summertrials from "../assets/projects/summertrials.png";
+
 
 
 export default function Projects() {
   const projects = [
+    // {
+    //   title: "CafeTom"
+
+    // },
     {
-      title: "Tag Team Summer Trials",
-      href: "https://github.com/anthskti/SummerTrials",
+      title: "fabFab",
+      href: "https://github.com/anthskti/fabfab",
       description:
         `
-          A 2D single player game, where the player will have different levels to complete. 
-          The player can control both a Sakuti (penguin) and Kitspii (elephant), tag team style. 
-          The objective is to get both characters to the finish line, however, there are many obstacles blocking the two characters. 
-          There will be a timer with a badge rating, to fit a racing theme. 
-          Demo will be available on December 10!!! 
+          Top 5 of CSHub Hacks, developed a image → 3D asset in FBX format for game developers.
+          Searching for 3D assets can be hard and costly for many, so we developed a prototype for 
+          3D asset generatation so creators can have solid assets for free and without much time wasting
+          on searching for fabs.
         `,
       image: temp,
+      technologies: [
+        "Python", "FastAPI", "Google Gemini", "Blender", "Three.js"
+      ],
+      github: "https://github.com/anthskti/fabfab",
+    },
+    {
+      title: "Tag Team Summer Trials",
+      href: "https://anthskti.itch.io/tag-team-summer-trials",
+      description:
+        `
+          A 2D single player game, where you have to control two different characters to complete the level. 
+          The player can control both a Penguin and Elephant, tag team style. 
+          The objective is to get both characters to the finish line, however, there are many obstacles blocking the two characters. 
+          There will be a timer with a badge rating, to fit a racing theme. 
+        `,
+      image: summertrials,
       technologies: [
         "Puzzle / Racing Game",
         "Godot",
@@ -40,6 +61,7 @@ export default function Projects() {
         "Pixilart",
       ],
       github: "https://github.com/anthskti/SummerTrials",
+      demo: "https://anthskti.itch.io/tag-team-summer-trials",
     },
     {
       title: "The Final Breath",

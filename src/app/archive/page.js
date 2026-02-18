@@ -27,7 +27,7 @@ export default async function Writing() {
   return (
     <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
       <header className="text-2xl text-left w-full font-bold mb-2">
-        Anth's Archive 🕮
+        Anth's Archive🤔
       </header>
       {/* <p className="text-neutral-600 dark:text-neutral-400 mb-4 w-full">
         An archive of my goals, failures, and lessons.

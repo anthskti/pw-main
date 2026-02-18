@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "./components/Link";
 import NextLink from "next/link";
+import HeadshotLightV from "@/app/assets/headshotlightv.png";
+import HeadshotDarkV from "@/app/assets/headshotdarkv.png";
 import Myself from "@/app/assets/me.png";
 import Myself2 from "@/app/assets/meafterhackathon.png";
 import YorkULogo from "@/app/components/icons/YorkULogo.png";
@@ -18,12 +20,19 @@ export default function About() {
     <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
       {/* Pic of Me */}
       <div className="flex flex-col items-center m-5">
+        
         <div className="w-48 h-48 relative rounded-xl border-2 border-stone-700 dark:border-stone-200 overflow-hidden transform transition-all duration-300 hover:scale-[1.01] shadow-sm hover:shadow-md">
           <Image
-            src={Myself2}
-            alt="Anthony Pham Picture"
+            src={HeadshotLightV}
+            alt="Headshot"
             fill
-            className="object-cover object-top"
+            className="object-cover object-top block dark:hidden"
+          />
+          <Image
+            src={HeadshotDarkV}
+            alt="Headshot"
+            fill
+            className="object-cover object-top hidden dark:block"
           />
         </div>
       </div>
@@ -79,6 +88,7 @@ export default function About() {
           {/* inside jots for what I've been upto*/}
           <ul className="grid gap-1 text-myriad pl-4">
             <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
               <span className="text-stone-700 dark:text-stone-400">
                 Self-developed a skincare website organizer, although continuing
                 to work on it. Check it out at{" "}
@@ -92,6 +102,13 @@ export default function About() {
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
+              <span className="text-stone-700 dark:text-stone-400">
+                Started a Toronto Local Cafe website called CafeTom, for people to find cafes easily so they can find study places by themselves or with their friends.
+              </span>
+            </li>
+            <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
               <span className="text-stone-700 dark:text-stone-400">
                 Shipped an Electric Vehicle E-commerce Platform in three months,
                 check out the frontend demo at {""}
@@ -105,26 +122,35 @@ export default function About() {
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
               <span className="text-stone-700 dark:text-stone-400">
-                Involved in a school capstone project working with real
-                partners. More info soon!
+                Developing solutions for{" "} 
+                <Link 
+                  href="https://www.northcrestdev.ca/"
+                  className="font-medium"
+                  >
+                    Northcrest YZD Project
+                  </Link>
+             {" "}to prevent areas of extreme weather. 
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
               <span className="text-stone-700 dark:text-stone-400">
                 Developing a 3D asset model generator, fabFab, for free lance
                 game developers.
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
               <span className="text-stone-700 dark:text-stone-400">
                 Learning more about fiancial literacy and long-term investing.
               </span>
             </li>
             <li className="relative flex items-start gap-2 group/item">
+              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
               <span className="text-stone-700 dark:text-stone-400">
-                Moving towards living a healthier lifestyle with practicing
-                martial arts.
+                Moving towards living a healthier lifestyle through practicing calisthenics and learning martial arts.
               </span>
             </li>
           </ul>
