@@ -18,6 +18,7 @@ import katana from "../assets/projects/katanathumbnail.png";
 // import touchless from "/videos/touchlessvid1.mp4"; 
 import temp from "../assets/projects/temp.png";
 import summertrials from "../assets/projects/summertrials.png";
+import clearup from "../assets/projects/clear.png";
 
 
 
@@ -37,7 +38,7 @@ export default function Projects() {
           If it's budget, skin type, or specific needs, you will find it here.
           Think of it as a PCPartPicker for Skincare. 
         `,
-      image: temp,
+      image: clearup,
       technologies: [
         "Next.js", 
         "Express.js", 
