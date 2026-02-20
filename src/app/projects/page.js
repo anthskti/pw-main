@@ -18,7 +18,7 @@ import katana from "../assets/projects/katanathumbnail.png";
 // import touchless from "/videos/touchlessvid1.mp4"; 
 import temp from "../assets/projects/temp.png";
 import summertrials from "../assets/projects/summertrials.png";
-import clearup from "../assets/projects/clear.png";
+import clearup from "../assets/projects/clearup.png";
 
 
 
