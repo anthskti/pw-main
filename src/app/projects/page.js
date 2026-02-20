@@ -28,6 +28,28 @@ export default function Projects() {
 
     // },
     {
+      title: "ClearUp",
+      href: "https://clear-up.vercel.app/",
+      description:
+        `
+          Want clear skin but you don't know where to start? 
+          This site will help you build and organize a perfect skincare routine for you.
+          If it's budget, skin type, or specific needs, you will find it here.
+          Think of it as a PCPartPicker for Skincare. 
+        `,
+      image: temp,
+      technologies: [
+        "Next.js", 
+        "Express.js", 
+        "PostgreSQL", 
+        "RESTful APIs", 
+        "Docker",
+        "Python"
+      ],
+      github: "https://github.com/anthskti/fabfab",
+      demo: "https://clear-up.vercel.app/",
+    },
+    {
       title: "fabFab",
       href: "https://github.com/anthskti/fabfab",
       description:
@@ -39,7 +61,11 @@ export default function Projects() {
         `,
       image: temp,
       technologies: [
-        "Python", "FastAPI", "Google Gemini", "Blender", "Three.js"
+        "Python", 
+        "FastAPI", 
+        "Google Gemini", 
+        "Blender", 
+        "Three.js"
       ],
       github: "https://github.com/anthskti/fabfab",
     },
