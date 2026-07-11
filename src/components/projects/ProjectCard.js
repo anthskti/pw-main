@@ -90,7 +90,7 @@ export default function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${title} demo`}
-                className="rounded-lg p-1.5 text-zinc-600 transition-colors bg-zinc-100 hover:bg-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-800"
+                className="rounded-lg p-1.5 text-zinc-600 transition-colors hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800"
               >
                 <SquareArrowOutUpRight className="h-4 w-4" />
               </a>

@@ -5,7 +5,7 @@ export default function ListItem({ children, className }) {
     >
       {/* - to + animation */}
       <div className="absolute left-0 top-[13px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
-      <div className="absolute left-0 top-[13px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-300 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
+      <div className="absolute left-0 top-[13px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
 
       <div className="min-w-0 flex-1 break-words leading-relaxed text-zinc-700 dark:text-zinc-300">
         {children}
