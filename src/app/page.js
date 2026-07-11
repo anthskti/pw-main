@@ -1,169 +1,231 @@
-"use client";
-
 import Image from "next/image";
-import Link from "./components/Link";
+import Link from "@/components/Link";
 import NextLink from "next/link";
-import HeadshotLightV from "@/app/assets/headshotlightv.png";
-import HeadshotDarkV from "@/app/assets/headshotdarkv.png";
-import Myself from "@/app/assets/me.png";
-import Myself2 from "@/app/assets/meafterhackathon.png";
-import YorkULogo from "@/app/components/icons/YorkULogo.png";
-import { useState } from "react";
+import ListItem from "@/components/about/ListItem";
+import ArrowItem from "@/components/about/ArrowItem.js";
+
+import headshot from "@/assets/googlepwpfp.png";
+
+import YorkULogo from "@/assets/icons/YorkULogo.png";
+import ITFLogo from "@/assets/icons/ITFLogo.jpg";
+import UofTHacksLogoWhite from "@/assets/icons/UofTHacksLogoWhite.png";
+import UofTHacksLogoBlack from "@/assets/icons/UofTHacksLogoBlack.png";
+import NorthcrestLogo from "@/assets/icons/NorthcrestLogo.jpeg";
+import ClearupLogo from "@/assets/icons/ClearupLogo.png";
+// import LunaLogo from "@/assets/icons/LunaLogo.png";
+
 import { Sword } from "lucide-react";
-
-// import resume from "resume.pdf";
-
-// Main Page - About Me
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center w-full justify-center max-w-2xl mx-auto p-4">
-      {/* Pic of Me */}
-      <div className="flex flex-col items-center m-5">
-        
-        <div className="w-48 h-48 relative rounded-xl border-2 border-stone-700 dark:border-stone-200 overflow-hidden transform transition-all duration-300 hover:scale-[1.01] shadow-sm hover:shadow-md">
-          <Image
-            src={HeadshotLightV}
-            alt="Headshot"
-            fill
-            className="object-cover object-top block dark:hidden"
-          />
-          <Image
-            src={HeadshotDarkV}
-            alt="Headshot"
-            fill
-            className="object-cover object-top hidden dark:block"
-          />
+    <div className="py-2 lg:py-8">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:justify-between">
+          <div className="min-w-0 max-w-2xl flex-1">
+            <header className="text-2xl font-bold">
+              Hey, I'm Anthony (or Anth)
+            </header>
+            <p className="leading-relaxed text-zinc-700 dark:text-zinc-300 mt-4">
+              I'm a Software Engineer based in Toronto, Canada, focused on
+              designing...
+              <br />
+              Outside of engineering, I enjoy playing the piano (ish), video
+              editing, calisthenics, karaoking...
+            </p>
+
+            {/* Experience + Education */}
+            <ul className="grid gap-1 mt-4">
+              <ListItem>
+                Software Engineering @{" "}
+                <span className="inline-flex items-baseline gap-1">
+                  <Image
+                    src={UofTHacksLogoBlack}
+                    alt="UofTHacks logo"
+                    width={15}
+                    height={15}
+                    className="object-contain relative top-[2px] block dark:hidden"
+                  />
+                  <Image
+                    src={UofTHacksLogoWhite}
+                    alt="UofTHacks logo"
+                    width={15}
+                    height={15}
+                    className="object-contain relative top-[2px] hidden dark:block"
+                  />
+                  <Link href="https://uofthacks.com/" className="font-bold">
+                    UofTHacks
+                  </Link>
+                </span>
+              </ListItem>
+
+              <ListItem>
+                Software Engineering @{" "}
+                <span className="inline-flex items-baseline gap-1">
+                  {/* <Image
+                    src={YorkULogo}
+                    alt="Luna PM"
+                    width={15}
+                    height={15}
+                    className="object-contain relative top-[2px]"
+                  /> */}
+                  <Link
+                    href="https://www.perimenopauselab.com/"
+                    className="font-bold"
+                  >
+                    Luna by PM Lab
+                  </Link>
+                </span>
+              </ListItem>
+
+              <ListItem>
+                Computer Science @{" "}
+                <span className="inline-flex items-baseline gap-1">
+                  <Image
+                    src={YorkULogo}
+                    alt="Yorku"
+                    width={15}
+                    height={15}
+                    className="object-contain relative top-[2px]"
+                  />
+                  <Link href="https://www.yorku.ca/" className="font-bold">
+                    LSE at York University
+                  </Link>
+                </span>
+              </ListItem>
+            </ul>
+
+            {/* What I've been Building / Projects */}
+            <ul className="grid gap-1 mt-4">
+              <ListItem>
+                <span className="font-bold italic tracking-wider">
+                  What I've been building:
+                </span>
+                <ul className="min-w-0 w-full pl-5">
+                  <ArrowItem>
+                    <span className="inline-flex items-baseline gap-1">
+                      <Image
+                        src={ClearupLogo}
+                        alt="Clearup Logo"
+                        width={15}
+                        height={15}
+                        className="object-contain relative top-[2px]"
+                      />
+                      <Link
+                        href="https://www.clearup.skin/"
+                        className="font-bold"
+                      >
+                        Clearup
+                      </Link>
+                    </span>{" "}
+                    a skincare organizer ...
+                  </ArrowItem>
+
+                  <ArrowItem>
+                    <Link href="" className="font-bold">
+                      Code Review Agent
+                    </Link>{" "}
+                    A ai agentic that generates a report of the code from a
+                    Github PR.
+                  </ArrowItem>
+
+                  <ArrowItem>
+                    <Link href="" className="font-bold">
+                      Clementine
+                    </Link>{" "}
+                    A ai agentic that generates a report of the code from a
+                    Github PR.
+                  </ArrowItem>
+
+                  <ArrowItem>
+                    <Link href="" className="font-bold">
+                      PowerRange
+                    </Link>
+                  </ArrowItem>
+                </ul>
+              </ListItem>
+            </ul>
+            {/* Previously */}
+            <ul className="grid gap-1 mt-4">
+              <ListItem>
+                <span className="font-bold italic tracking-wider text-zinc-900 dark:text-zinc-100">
+                  Previously:
+                </span>
+                <ul className="min-w-0 w-full pl-5">
+                  <ArrowItem>
+                    Technical Lead @{" "}
+                    <span className="inline-flex items-baseline gap-1">
+                      <Image
+                        src={NorthcrestLogo}
+                        alt="Northcrest Logo"
+                        width={15}
+                        height={15}
+                        className="object-contain relative top-[2px]"
+                      />
+                      <Link
+                        href="https://www.northcrestdev.ca/"
+                        className="font-bold"
+                      >
+                        Northcrest YZD
+                      </Link>
+                      via C4 Capstone
+                    </span>
+                  </ArrowItem>
+
+                  <ArrowItem>
+                    UX Designer @{" "}
+                    <Link
+                      href="https://www.instagram.com/popular/art-circle-of-alberta/"
+                      className="font-bold"
+                    >
+                      Art Circle of Alberta
+                    </Link>
+                  </ArrowItem>
+
+                  <ArrowItem>
+                    Deputy External @{" "}
+                    <span className="inline-flex items-baseline gap-1">
+                      <Image
+                        src={ITFLogo}
+                        alt="Yorku ITF Taekwondo Logo"
+                        width={15}
+                        height={15}
+                        className="object-contain relative top-[2px]"
+                      />
+                      <Link
+                        href="https://www.instagram.com/yorktaekwondo/"
+                        className="font-bold"
+                      >
+                        YorkU ITF Taekwondo
+                      </Link>
+                    </span>{" "}
+                  </ArrowItem>
+                </ul>
+              </ListItem>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-center gap-4">
+            <div className="w-56 h-56 md:w-72 md:h-72 relative rounded-xl border-2 border-zinc-700 dark:border-zinc-200 overflow-hidden transform transition-all duration-300 shadow-sm hover:shadow-md">
+              <Image
+                src={headshot}
+                alt="Anthony Pham headshot"
+                draggable={false}
+                fill
+                className="object-cover object-top"
+                priority
+              />
+            </div>
+            <NextLink
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center py-4 px-5 rounded-xl border-2 border-zinc-700 dark:border-zinc-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-stone-900 dark:hover:text-stone-100 transform transition-all duration-300 hover:scale-[1.02] active:scale-1 shadow-sm hover:shadow-md"
+            >
+              Check out my resume!{" "}
+              <Sword className="size-5 inline align-top ml-1" />
+            </NextLink>
+          </div>
         </div>
       </div>
-
-      <header className="text-xl text-left w-full max-w-2xl">
-        I'm {""}
-        <span className="font-bold">Anthony </span>
-        (or
-        <span className="font-bold"> Anth</span>)
-      </header>
-
-      {/* List Section */}
-      <ul className="grid gap-2 w-full max-w-2xl">
-        {/* Intro */}
-        <li className="group flex items-start gap-4 hover:translate-x-1 pl-4 relative transition-transform duration-200">
-          {/* bullet point to plus point */}
-          <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
-          <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
-          <span className="text-stone-700 dark:text-stone-400">
-            Software engineering and fullstacks development. My goals is to make
-            my ideas turn to reality.
-          </span>
-        </li>
-        {/* School */}
-        <li className="group flex items-start gap-4 hover:translate-x-1 pl-4 relative transition-transform duration-200">
-          {/* bullet point to plus point */}
-          <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
-          <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
-          <span className="text-stone-700 dark:text-stone-400">
-            Computer Science in <span> </span>
-            <span className="inline-flex items-baseline gap-1">
-              <Image
-                src={YorkULogo}
-                alt="Yorku Logo"
-                width={15}
-                height={15}
-                className="object-contain relative top-[2px]"
-              />
-              <Link href="https://www.yorku.ca/" className="font-medium">
-                LSE at York University.
-              </Link>
-            </span>
-          </span>
-        </li>
-        {/* What I'm current upto */}
-        <li className="group flex flex-col hover:translate-x-1 pl-4 relative transition-transform duration-200">
-          {/* bullet point to plus point */}
-          <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-90" />
-          <div className="absolute left-0 top-[10px] transform -translate-y-1/2 w-[8px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300 group-hover:rotate-180" />
-          <span className="text-stone-700 dark:text-stone-400 font-medium">
-            Lately:
-          </span>
-          {/* inside jots for what I've been upto*/}
-          <ul className="grid gap-1 text-myriad pl-4">
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Self-developed a skincare website organizer, although continuing
-                to work on it. Check it out at{" "}
-                <Link
-                  href="https://clear-up.vercel.app/"
-                  className="font-medium"
-                >
-                  ClearUp
-                </Link>
-                !
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Started a Toronto Local Cafe website called CafeTom, for people to find cafes easily so they can find study places by themselves or with their friends.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Shipped an Electric Vehicle E-commerce Platform in three months,
-                check out the frontend demo at {""}
-                <Link
-                  href="https://powerrange.vercel.app/"
-                  className="font-medium"
-                >
-                  PowerRange
-                </Link>
-                .
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Developing solutions for{" "} 
-                <Link 
-                  href="https://www.northcrestdev.ca/"
-                  className="font-medium"
-                  >
-                    Northcrest YZD Project
-                  </Link>
-             {" "}to prevent areas of extreme weather. 
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Developing a 3D asset model generator, fabFab, for free lance
-                game developers.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Learning more about fiancial literacy and long-term investing.
-              </span>
-            </li>
-            <li className="relative flex items-start gap-2 group/item">
-              <div className="absolute -left-2 top-[10px] transform -translate-y-1/2 w-[2px] h-[2px] bg-stone-800 dark:bg-stone-200 transition-all duration-300" />
-              <span className="text-stone-700 dark:text-stone-400">
-                Moving towards living a healthier lifestyle through practicing calisthenics and learning martial arts.
-              </span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <NextLink
-        href="/resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-center mt-4 py-4 px-5 rounded-xl border-2 border-stone-700 dark:border-stone-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-purple transform transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:shadow-md"
-      >
-        check out my resume! <Sword className="size-5 inline align-top ml-1" />
-      </NextLink>
     </div>
   );
 }

@@ -17,24 +17,45 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-  font-family: 'Myriad';
-  src: url('/font/Myriad.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  font-family: 'Myriad', sans-serif;
-  
-}
 /* hides scrollbar */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
+} */
+
+@keyframes link-sweep {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
+@layer components {
+  .link-sweep {
+    @apply relative inline-flex items-center transition-colors duration-300;
+  }
 
+  .link-sweep::after {
+    content: "";
+    @apply absolute left-0 bottom-0 h-px w-full bg-zinc-300 dark:bg-zinc-600 z-[1];
+  }
+
+  .link-sweep::before {
+    content: "";
+    @apply absolute left-0 bottom-0 h-px w-full bg-zinc-800 dark:bg-zinc-300 opacity-0 z-[2];
+  }
+
+  .link-sweep:hover::before {
+    @apply opacity-100;
+    animation: link-sweep 2s ease-in-out;
+  }
+
+  .nav-link {
+    @apply relative inline-flex items-center justify-center rounded-lg px-3 py-1.5 text-sm font-medium transition-colors duration-300;
+  }
+}
