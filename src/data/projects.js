@@ -1,4 +1,3 @@
-import schizo from "@/assets/projects/schizo.png";
 import percept from "@/assets/projects/percept.jpg";
 import yorkuparking from "@/assets/projects/yorkuparking.png";
 import traceDemo from "@/assets/projects/trace-demo.gif";
@@ -6,7 +5,9 @@ import powerrange from "@/assets/projects/powerrangepage.png";
 import katana from "@/assets/projects/katanathumbnail.png";
 import temp from "@/assets/projects/temp.png";
 import summertrials from "@/assets/projects/summertrials.png";
-import clearup from "@/assets/projects/clearup.png";
+import cafetom from "@/assets/projects/cafetom.png";
+import clementine from "@/assets/projects/clementine.png";
+import clearup from "@/assets/projects/clearuphomee.png";
 
 export const PROJECT_CATEGORIES = ["All", "Work", "Hackathon", "Personal"];
 
@@ -33,19 +34,21 @@ export const projects = [
   {
     title: "Code Review Agent",
     category: "Personal",
-    href: "",
-    description: "",
+    href: "https://github.com/mark-ngo203/code-review-agent",
+    description:
+      "With AI allowing developers to ship fast, we made an agentic ai pipeline that reviews Github PR requests, generating a pull request report.",
     image: temp,
     technologies: ["FastAPI", "Google ADK", "Gemini", "LLM", "Python"],
-    github: "",
-    demo: "",
+    github: "https://github.com/mark-ngo203/code-review-agent",
+    demo: "https://youtu.be/ED3WgY3tLek?si=kFdge3LwVDsRpf05",
   },
   {
     title: "Clementine",
     category: "Personal",
     href: "https://clementine-pi.vercel.app/",
-    description: "",
-    image: temp,
+    description:
+      "Clementine is a personal functional fintech application that transforms boring portfolio spreadsheets into a living garden.",
+    image: clementine,
     technologies: [
       "FastAPI",
       "Next.js",
@@ -54,15 +57,15 @@ export const projects = [
       "Python",
       "Typescript",
     ],
-    github: "https://github.com/anthskti/clearup",
-    demo: "https://www.clearup.skin/",
+    github: "https://github.com/anthskti/Clementine",
+    demo: "https://www.youtube.com/watch?v=WYxQTdH8iW4",
   },
   {
     title: "PowerRange",
     category: "Work",
     href: "https://powerrange.vercel.app/",
     description:
-      "PowerRange is a full-stack e-commerce platform for car sales, featuring JWT authentication, Stripe payments, and real-time sales analytics.",
+      "PowerRange is a cloud native full stack e-commerce platform for car sales, featuring JWT authentication, Stripe payments, and real-time sales analytics.",
     image: powerrange,
     technologies: [
       "Java",
@@ -73,34 +76,36 @@ export const projects = [
       "Next.js",
     ],
     github: "https://github.com/anthskti/PowerRange",
-    demo: "https://powerrange.vercel.app/",
+    demo: "",
   },
   {
-    title: "Walkway",
+    title: "Hangar District Storefront Walkway",
     category: "Work",
-    href: "",
-    description: "",
+    href: "https://youtu.be/2_Pt8QzRSYk",
+    description:
+      "Designed and developed a storefront walkway solution for the Hangar District under development from Northcrest at YZD avoid weather conditions in elevated land.",
     image: temp,
-    technologies: ["Unreal Engine", "C++", "After Effects"],
-    github: "",
-    demo: "",
+    technologies: ["VR Metaquest", "Unreal Engine", "C++", "After Effects"],
+    // github: "",
+    demo: "https://youtu.be/2_Pt8QzRSYk",
   },
   {
     title: "CafeTom",
     category: "Personal",
-    href: "",
-    description: "",
-    image: temp,
+    href: "https://cafetom.vercel.app/",
+    description:
+      "A convenient local list of Cafe spots people can use as third spaces (studying, chatting, etc) using Google Place's API for context.",
+    image: cafetom,
     technologies: ["C++", ".NET", "Docker", "Next.js", "Google Places API"],
-    github: "",
-    demo: "",
+    github: "https://github.com/anthskti/cafetom",
+    demo: "https://cafetom.vercel.app/",
   },
   {
     title: "fabFab",
     category: "Hackathon",
     href: "https://github.com/anthskti/fabfab",
     description:
-      "Developed a prototype for 3D asset generation so creators can have solid assets without costly searches.",
+      "Turn your prompts and images into 3D Video Game Assets(.fbx mainly for Unreal Engine) files with fabFab.",
     image: temp,
     technologies: ["FastAPI", "Google Gemini", "Blender", "Three.js", "Python"],
     github: "https://github.com/anthskti/fabfab",
@@ -110,9 +115,9 @@ export const projects = [
     category: "Hackathon",
     href: "https://github.com/tvirat/UofTHacks12",
     description:
-      "Full-stack app where users publicly post notes on a map or privately send stories for advice.",
+      "Interactively publicly sincere post notes on a map or privately send stories for advice.",
     image: percept,
-    technologies: ["React", "Vite", "Python", "Flask", "Google Maps API"],
+    technologies: ["Vite.js", "Python", "Flask", "Google Maps API"],
     github: "https://github.com/tvirat/UofTHacks12",
   },
   {
@@ -120,7 +125,7 @@ export const projects = [
     category: "Hackathon",
     href: "https://wondrous-menu-617557.framer.app/",
     description:
-      "Operate devices with hand gestures — quit, navigate slides, scroll, and control slideshows hands-free.",
+      "Operate any device with an invisible UI. With hand gestures you can: quit, navigate slides, scroll, and control slideshows hands-free.",
     image: "/videos/touchlessvid1.mp4",
     technologies: ["Python", "OpenCV", "MediaPipe", "Eleven Labs API"],
     github: "https://github.com/najmasultani/Invisible-UI",
@@ -151,11 +156,11 @@ export const projects = [
     category: "Work",
     href: "https://anthskti.itch.io/tag-team-summer-trials",
     description:
-      "Single-player game where you control two characters to reach the finish line before time runs out.",
+      "Single-player game where you control two characters to reach the finish line, compete for the highest medal.",
     image: summertrials,
     technologies: ["Godot", "GDScript", "Pixilart"],
     github: "https://github.com/anthskti/SummerTrials",
-    demo: "https://anthskti.itch.io/tag-team-summer-trials",
+    demo: "https://youtu.be/m7uBUaXtzSw",
   },
   {
     title: "The Final Breath",

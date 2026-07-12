@@ -98,7 +98,7 @@ export default function ProjectCard({
           </div>
         </div>
 
-        <p className="line-clamp-2 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+        <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
           {description}
         </p>
 
