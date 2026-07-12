@@ -31,7 +31,7 @@ export default function About() {
               I'm a Software Engineer based in Toronto, Canada, focused on
               website development, AI, and data analysis.
               <br />
-              Outside of engineering, I've enjoy doing calisthenics, playing
+              Outside of engineering, I've enjoyed doing calisthenics, playing
               piano(ish), video editing (kind of retired), karoaking, playing
               video games, and chess (700 elo).
             </p>

@@ -16,7 +16,6 @@ function filterProjects(projects, category, searchTerm) {
 
     return (
       project.title.toLowerCase().includes(lower) ||
-      project.hook.toLowerCase().includes(lower) ||
       project.description.toLowerCase().includes(lower) ||
       project.category.toLowerCase().includes(lower) ||
       project.technologies.some((tech) => tech.toLowerCase().includes(lower))
