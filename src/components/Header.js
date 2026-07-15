@@ -94,7 +94,7 @@ export default function Header() {
     },
     {
       name: "Resume",
-      href: "/resume.pdf",
+      href: "/anthony_resume.pdf",
       isActive: false,
       isNextLink: false,
     },

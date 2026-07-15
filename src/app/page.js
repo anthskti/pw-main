@@ -250,7 +250,7 @@ export default function About() {
               />
             </div>
             <NextLink
-              href="/resume.pdf"
+              href="/anthony_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-center py-4 px-5 rounded-xl border-2 border-zinc-700 dark:border-zinc-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-stone-900 dark:hover:text-zinc-100 transform transition-all duration-300 hover:scale-[1.02] active:scale-1 shadow-sm hover:shadow-md"

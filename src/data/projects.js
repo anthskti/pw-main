@@ -44,7 +44,7 @@ export const projects = [
   },
   {
     title: "Clementine",
-    category: "Personal",
+    category: "Hackathon",
     href: "https://clementine-pi.vercel.app/",
     description:
       "Clementine is a personal functional fintech application that transforms boring portfolio spreadsheets into a living garden.",
