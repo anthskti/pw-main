@@ -21,7 +21,7 @@ const toBase64 = (str) =>
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
 
-const MAX_VISIBLE_TECH = 4;
+const MAX_VISIBLE_TECH = 10;
 
 export default function ProjectCard({
   title,

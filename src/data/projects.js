@@ -32,6 +32,38 @@ export const projects = [
     demo: "https://www.clearup.skin/",
   },
   {
+    title: "Luna at The Perimenopause Lab",
+    category: "Work",
+    href: "https://www.perimenopauselab.com",
+    description:
+      "",
+    image: temp,
+    technologies: ["Node.js", "Express.js", "Typescript", "PostgreSQL", "OpenAI", "Azure Portal", "Apify", "Resend", "Livekit"],
+    demo: "https://www.perimenopauselab.com",
+  },
+  {
+    title: "Voicely",
+    category: "Hackathon",
+    href: "",
+    description:
+      "",
+    image: temp,
+    technologies: ["FastAPI", "Google ADK", "Gemini", "LLM", "Python"],
+    github: "",
+    demo: "",
+  },
+  {
+    title: "Reverie",
+    category: "Hackathon",
+    href: "",
+    description:
+      "",
+    image: temp,
+    technologies: ["FastAPI", "Google ADK", "Gemini", "LLM", "Python"],
+    github: "",
+    demo: "",
+  },
+  {
     title: "Code Review Agent",
     category: "Personal",
     href: "https://github.com/mark-ngo203/code-review-agent",

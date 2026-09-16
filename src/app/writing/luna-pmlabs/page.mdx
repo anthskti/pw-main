@@ -1,0 +1,40 @@
+import Image from "next/image";
+import MdxLayout from "@/components/writing/MdxLayout";
+
+# _My first internship: Luna at The Perimenopause Lab_
+
+
+After weeks to months of searching, I landed my first real position at a company. It is a startup funded by the government, where we’re building software for women’s health. 
+
+I had a special task, creating a recommendation system and a professional directory, similarly to how [boardy.ai](https://www.boardy.ai/) works. I honestly think this was out of my skill set, but I wanted to prove to myself I can adapt to anything (Mahoraga my goat), learn more than just basic website features.
+
+## My Personal Experience
+Honestly onboarding onto this system felt like I stepped in a whole different world; the architectural style was completely different from what I am familiar with and I was building something I never learned about in school.
+
+Being in a startup, I had much more free range to do what I could. My CEO which I’d talk to directly, is a Doctor and still learning about the technical side to software, so I had to take on the role of System Design and communication; honestly the pressure felt way higher than a regular entry level job, but honestly, the experience has been ridiculously invaluable; I’m genuinely happy that I took time to choose this job.
+
+## Reflection 
+I’m reach close to the end and I’ve learned so much, not only how to code, but System Design, QA Testing, DevOps on Azure's Portal and CLI, and soft skills with non-technical people.
+
+## What I did (in detail)
+
+I can't go indetail since I signed an NDA, but this is generally what I did.
+- I developed an optimized retrieval augmented generation (RAG) system for the recommendation engine. 
+- I create a detailed table for professionals/practitioners/clinicians with their detail (along with referral codes).
+- An datascraper utilizing Apify's content webcrawler along with regex + AI (to infer attributes since we're getting information from several websites).
+- An emailing service which allowed us to ask the professionals directly for proper information + consent being on the system.
+
+Thank you for having me __Daniella Remy__ and [Luna at The Perimenopause Lab](https://luna.perimenopauselab.com)!
+
+export const meta = {
+  title: "My first internship: Luna at The Perimenopause Labs.",
+  date: "8-25-2026",
+  description:
+    "Landing my first Software Engineering Role.",
+  status: "Published",
+};
+
+export default function MDXPage({ children }) {
+  return <MdxLayout>{children}</MdxLayout>
+
+}

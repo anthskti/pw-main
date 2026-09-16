@@ -4,7 +4,7 @@ import NextLink from "next/link";
 import ListItem from "@/components/about/ListItem";
 import ArrowItem from "@/components/about/ArrowItem.js";
 
-import headshot from "@/assets/googlepwpfp.png";
+import headshot from "@/assets/anthgoogle.jpg";
 
 import YorkULogo from "@/assets/icons/YorkULogo.png";
 import ITFLogo from "@/assets/icons/ITFLogo.jpg";
@@ -32,8 +32,8 @@ export default function About() {
               website development, AI, and data analysis.
               <br />
               Outside of engineering, I've enjoyed doing calisthenics, playing
-              piano(ish), video editing (kind of retired), karoaking, playing
-              video games, and chess (700 elo).
+              piano(ish), cooking, video editing (kind of retired), karoaking, playing
+              video games, and chess (peaked 802 elo).
             </p>
 
             {/* Experience + Education */}
@@ -250,7 +250,7 @@ export default function About() {
               />
             </div>
             <NextLink
-              href="/anthony_resume.pdf"
+              href="/anthony_pham_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-center py-4 px-5 rounded-xl border-2 border-zinc-700 dark:border-zinc-200 hover:bg-amber-200 dark:hover:bg-violet-500 hover:text-stone-900 dark:hover:text-zinc-100 transform transition-all duration-300 hover:scale-[1.02] active:scale-1 shadow-sm hover:shadow-md"
