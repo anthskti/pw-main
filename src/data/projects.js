@@ -8,6 +8,9 @@ import summertrials from "@/assets/projects/summertrials.png";
 import cafetom from "@/assets/projects/cafetom.png";
 import clementine from "@/assets/projects/clementine.png";
 import clearup from "@/assets/projects/clearuphomee.png";
+// import reverie from "@/assets/projects/reverie.png";
+import codereviewagent from "@/assets/projects/code-review-agent.png";
+import voicely from "@/assets/projects/voicely.png";
 
 export const PROJECT_CATEGORIES = ["All", "Work", "Hackathon", "Personal"];
 
@@ -36,31 +39,31 @@ export const projects = [
     category: "Work",
     href: "https://www.perimenopauselab.com",
     description:
-      "",
+      "Designed and built a recommendation system for practitioners / clinicians; helping personalize treatment plans for users. Also a outrech + directory for these professionals.",
     image: temp,
-    technologies: ["Node.js", "Express.js", "Typescript", "PostgreSQL", "OpenAI", "Azure Portal", "Apify", "Resend", "Livekit"],
+    technologies: ["Node.js", "Express.js", "Typescript", "PostgreSQL", "OpenAI", "Azure", "Apify", "Resend", "Livekit"],
     demo: "https://www.perimenopauselab.com",
   },
   {
     title: "Voicely",
     category: "Hackathon",
-    href: "",
+    href: "https://voicely-lake.vercel.app/",
     description:
-      "",
-    image: temp,
-    technologies: ["FastAPI", "Google ADK", "Gemini", "LLM", "Python"],
-    github: "",
-    demo: "",
+      "For Ingnition Hacks v7, I solo-hacked a voice over practice application where users can read and voice act scenes, get graded, and hear their voice on the video.",
+    image: voicely,
+    technologies: ["Go", "Gin", "Python", "FastAPI", "Pytorch", "PostgreSQL", "Docker", "Next.js", "Typescript"],
+    github: "https://github.com/anthskti/voicely",
+    demo: "https://voicely-lake.vercel.app/",
   },
   {
     title: "Reverie",
     category: "Hackathon",
-    href: "",
+    href: "https://github.com/anthskti/reverie",
     description:
-      "",
+      "For Hack the 6ix, I developed a 4 step agentic AI pipeline where it'll help you recycle your old clothes along with building a compliment community marketplace for materials.",
     image: temp,
-    technologies: ["FastAPI", "Google ADK", "Gemini", "LLM", "Python"],
-    github: "",
+    technologies: ["Python", "FastAPI", "Google ADK", "Gemini", "AI Agents", "Auth0", "PostgreSQL", "Next.js", "Typescript"],
+    github: "https://github.com/anthskti/reverie",
     demo: "",
   },
   {
@@ -69,7 +72,7 @@ export const projects = [
     href: "https://github.com/mark-ngo203/code-review-agent",
     description:
       "With AI allowing developers to ship fast, we made an agentic ai pipeline that reviews Github PR requests, generating a pull request report.",
-    image: temp,
+    image: codereviewagent,
     technologies: ["FastAPI", "Google ADK", "Gemini", "LLM", "Python"],
     github: "https://github.com/mark-ngo203/code-review-agent",
     demo: "https://youtu.be/ED3WgY3tLek?si=kFdge3LwVDsRpf05",
