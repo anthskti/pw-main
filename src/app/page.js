@@ -14,6 +14,7 @@ import NorthcrestLogo from "@/assets/icons/NorthcrestLogo.jpeg";
 import ClearupLogo from "@/assets/icons/ClearupLogo.png";
 import ClementineLogo from "@/assets/icons/ClementineLogo.png";
 import CostcoLogo from "@/assets/icons/CostcoLogo.jpg";
+import Blossom from "@/assets/icons/blossom.webp";
 // import LunaLogo from "@/assets/icons/LunaLogo.png";
 
 import { Sword } from "lucide-react";
@@ -32,8 +33,9 @@ export default function About() {
               website development, AI, and data analysis.
               <br />
               Outside of engineering, I've enjoyed doing calisthenics, playing
-              piano(ish), cooking, video editing (kind of retired), karoaking, playing
-              video games, and chess (peaked 802 elo).
+              piano(ish), cooking, video editing (kind of retired), playing
+              video games, clash royale (11500 trophies) and chess (peaked 906
+              elo).
             </p>
 
             {/* Experience + Education */}
@@ -62,20 +64,20 @@ export default function About() {
               </ListItem>
 
               <ListItem>
-                Software Engineering @{" "}
+                Content Creation @{" "}
                 <span className="inline-flex items-baseline gap-1">
-                  {/* <Image
-                    src={YorkULogo}
-                    alt="Luna PM"
+                  <Image
+                    src={Blossom}
+                    alt="Blossom"
                     width={15}
                     height={15}
                     className="object-contain relative top-[2px]"
-                  /> */}
+                  />
                   <Link
-                    href="https://www.perimenopauselab.com/"
+                    href="https://www.instagram.com/anthassets"
                     className="font-bold"
                   >
-                    Luna by PM Lab
+                    Blossom Social
                   </Link>
                 </span>
               </ListItem>
@@ -134,7 +136,7 @@ export default function About() {
                     report.
                   </ArrowItem>
 
-                  <ArrowItem>
+                  {/* <ArrowItem>
                     <span className="inline-flex items-baseline gap-1">
                       <Image
                         src={ClementineLogo}
@@ -153,7 +155,7 @@ export default function About() {
                     {": "} turns your investment portfolio into a little garden,
                     using AI to look at your real financial data and give you
                     advice that's actually fun to check in on.
-                  </ArrowItem>
+                  </ArrowItem> */}
 
                   {/* <ArrowItem>
                     <Link href="" className="font-bold">
@@ -170,6 +172,24 @@ export default function About() {
                   Previously:
                 </span>
                 <ul className="min-w-0 w-full pl-5">
+                  <ArrowItem>
+                    Software Engineer Intern @{" "}
+                    <span className="inline-flex items-baseline gap-1">
+                      {/* <Image
+                        src={NorthcrestLogo}
+                        alt="The Perimenopause Lab"
+                        width={15}
+                        height={15}
+                        className="object-contain relative top-[2px]"
+                      /> */}
+                      <Link
+                        href="https://www.northcrestdev.ca/"
+                        className="font-bold"
+                      >
+                        The Perimenopause Lab
+                      </Link>
+                    </span>
+                  </ArrowItem>
                   <ArrowItem>
                     Technical Lead @{" "}
                     <span className="inline-flex items-baseline gap-1">
@@ -190,7 +210,7 @@ export default function About() {
                     </span>
                   </ArrowItem>
 
-                  <ArrowItem>
+                  {/* <ArrowItem>
                     UX Designer @{" "}
                     <Link
                       href="https://www.instagram.com/popular/art-circle-of-alberta/"
@@ -198,7 +218,7 @@ export default function About() {
                     >
                       Art Circle of Alberta
                     </Link>
-                  </ArrowItem>
+                  </ArrowItem> */}
 
                   <ArrowItem>
                     Associate @{" "}

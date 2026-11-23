@@ -8,28 +8,33 @@ import summertrials from "@/assets/projects/summertrials.png";
 import cafetom from "@/assets/projects/cafetom.png";
 import clementine from "@/assets/projects/clementine.png";
 import clearup from "@/assets/projects/clearuphomee.png";
-// import reverie from "@/assets/projects/reverie.png";
+import reverie from "@/assets/projects/reverie.webp";
 import codereviewagent from "@/assets/projects/code-review-agent.png";
 import voicely from "@/assets/projects/voicely.png";
+import spacetimedb from "@/assets/projects/spacetimedb.webp";
+import orca from "@/assets/projects/orca.webp";
 
-export const PROJECT_CATEGORIES = ["All", "Work", "Hackathon", "Personal"];
+export const PROJECT_CATEGORIES = ["All", "Hackathon", "Personal"];
 
 export const projects = [
   {
-    title: "ClearUp",
+    title: "Clearup",
     category: "Personal",
     href: "https://www.clearup.skin/",
     description:
       "Want clear skin but you don't know where to start? I developed this website to help you build and organize the perfect skincare routine for you.",
     image: clearup,
     technologies: [
+      "Typescript",
       "Next.js",
       "Express.js",
+      "Node.js",
       "PostgreSQL",
       "AWS",
+      "Cloudflare",
       "Docker",
       "Python",
-      "Typescript",
+      "Apify",
     ],
     github: "https://github.com/anthskti/clearup",
     demo: "https://www.clearup.skin/",
@@ -39,8 +44,8 @@ export const projects = [
     category: "Hackathon",
     href: "https://youtu.be/TXRZh1yjFeg",
     description:
-      "At Cal Hacks v13, our team built a real-time multiplayer motion-controlled boxing game. Features a server-side combat engine on SpacetimeDB and 30 FPS MediaPipe pose tracking.",
-    image: temp,
+      "At Cal Hacks v13, our team built a real-time community based multiplayer boxing game. Using a webcam or Airpod motion controllers and a server-side combat engine.",
+    image: spacetimedb,
     technologies: [
       "TypeScript",
       "Next.js",
@@ -57,8 +62,8 @@ export const projects = [
     category: "Hackathon",
     href: "https://youtu.be/W0umiOq4xsg?si=QHc0KPg5jCnkGIYL",
     description:
-      "For Hack the North 2026, we built an IP-KVM remote server recovery system bridging a Raspberry Pi to low-latency MJPEG video, with an OpenAI Vision agent for autonomous recovery.",
-    image: temp,
+      "For Hack the North 2026, we built an AI Agent below the OS (OpenClaw that can work when the OS isn't). It's an IP-KVM remote server recovery system bridging a QNX Raspberry Pi to low-latency MJPEG video, with an OpenAI Vision agent for autonomous recovery.",
+    image: orca,
     technologies: [
       "Go",
       "Gin",
@@ -67,18 +72,9 @@ export const projects = [
       "OpenAI Vision",
       "WebSockets",
       "MJPEG",
+      "Raspberry Pi 5",
     ],
     demo: "https://youtu.be/W0umiOq4xsg?si=QHc0KPg5jCnkGIYL",
-  },
-  {
-    title: "Luna at The Perimenopause Lab",
-    category: "Work",
-    href: "https://www.perimenopauselab.com",
-    description:
-      "Designed and built a recommendation system for practitioners / clinicians; helping personalize treatment plans for users. Also a outrech + directory for these professionals.",
-    image: temp,
-    technologies: ["Node.js", "Express.js", "Typescript", "PostgreSQL", "OpenAI", "Azure", "Apify", "Resend", "Livekit"],
-    demo: "https://www.perimenopauselab.com",
   },
   {
     title: "Voicely",
@@ -87,7 +83,17 @@ export const projects = [
     description:
       "For Ingnition Hacks v7, I solo-hacked a voice over practice application where users can read and voice act scenes, get graded, and hear their voice on the video.",
     image: voicely,
-    technologies: ["Go", "Gin", "Python", "FastAPI", "Pytorch", "PostgreSQL", "Docker", "Next.js", "Typescript"],
+    technologies: [
+      "Go",
+      "Gin",
+      "Python",
+      "FastAPI",
+      "Pytorch",
+      "PostgreSQL",
+      "Docker",
+      "Next.js",
+      "Typescript",
+    ],
     github: "https://github.com/anthskti/voicely",
     demo: "https://voicely-lake.vercel.app/",
   },
@@ -97,8 +103,18 @@ export const projects = [
     href: "https://github.com/anthskti/reverie",
     description:
       "For Hack the 6ix, I developed a 4 step agentic AI pipeline where it'll help you recycle your old clothes along with building a compliment community marketplace for materials.",
-    image: temp,
-    technologies: ["Python", "FastAPI", "Google ADK", "Gemini", "AI Agents", "Auth0", "PostgreSQL", "Next.js", "Typescript"],
+    image: reverie,
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Google ADK",
+      "Gemini",
+      "AI Agents",
+      "Auth0",
+      "PostgreSQL",
+      "Next.js",
+      "Typescript",
+    ],
     github: "https://github.com/anthskti/reverie",
     demo: "",
   },
@@ -150,29 +166,12 @@ export const projects = [
     demo: "",
   },
   {
-    title: "UofTHacks Judging Scheduler",
-    category: "Work",
-    href: "https://uofthacks.com/",
-    description:
-      "Refactored the judging scheduling workflow in FastAPI for UofTHacks 14, automating sponsor track sync with handshake tokens and adding after-deadline project append for 750+ hackers.",
-    image: temp,
-    technologies: [
-      "FastAPI",
-      "Python",
-      "Astro",
-      "TypeScript",
-      "Three.js",
-      "Algorithms",
-    ],
-    demo: "https://uofthacks.com/",
-  },
-  {
     title: "Hangar District Storefront Walkway",
     category: "Work",
     href: "https://youtu.be/2_Pt8QzRSYk",
     description:
-      "Designed and developed a storefront walkway solution for the Hangar District under development from Northcrest at YZD avoid weather conditions in elevated land.",
-    image: temp,
+      "Designed and developed a 3D environment storefront walkway solution for the Hangar District in Downsview Park under development from Northcrest at YZD avoid weather conditions in elevated land.",
+    image: "/videos/northcrest.mp4",
     technologies: ["VR Metaquest", "Unreal Engine", "C++", "After Effects"],
     // github: "",
     demo: "https://youtu.be/2_Pt8QzRSYk",
@@ -188,16 +187,16 @@ export const projects = [
     github: "https://github.com/anthskti/cafetom",
     demo: "https://cafetom.vercel.app/",
   },
-  {
-    title: "fabFab",
-    category: "Hackathon",
-    href: "https://github.com/anthskti/fabfab",
-    description:
-      "Turn your prompts and images into 3D Video Game Assets(.fbx mainly for Unreal Engine) files with fabFab.",
-    image: temp,
-    technologies: ["FastAPI", "Google Gemini", "Blender", "Three.js", "Python"],
-    github: "https://github.com/anthskti/fabfab",
-  },
+  // {
+  //   title: "fabFab",
+  //   category: "Hackathon",
+  //   href: "https://github.com/anthskti/fabfab",
+  //   description:
+  //     "Turn your prompts and images into 3D Video Game Assets(.fbx mainly for Unreal Engine) files with fabFab.",
+  //   image: temp,
+  //   technologies: ["FastAPI", "Google Gemini", "Blender", "Three.js", "Python"],
+  //   github: "https://github.com/anthskti/fabfab",
+  // },
   {
     title: "Percept",
     category: "Hackathon",
@@ -231,7 +230,7 @@ export const projects = [
   // },
   {
     title: "Themed Itinerary Generator",
-    category: "Personal",
+    category: "Work",
     href: "https://github.com/anthskti",
     description:
       "A graph-based trip planner using the Yelp Open Dataset, modeling 26k+ spots with Personalized PageRank and 2-opt TSP heuristics to generate coherent day plans.",
@@ -252,7 +251,14 @@ export const projects = [
     description:
       "Trained on Yahoo Finance data with SMA, RSI, VWAP, and Fibonacci retracement analysis.",
     image: traceDemo,
-    technologies: ["Python", "Pandas", "Plotly", "Tensorflow"],
+    technologies: [
+      "Python",
+      "Pandas",
+      "Plotly",
+      "scikit-learn",
+      "Tensorflow",
+      "LSTM",
+    ],
     github: "https://github.com/anthskti/Trace",
   },
   {

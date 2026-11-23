@@ -34,7 +34,7 @@ export default function ProjectCard({
   demo,
 }) {
   const src = typeof image === "string" ? image : image.src;
-  const isVideo = src.endsWith(".mp4");
+  const isVideo = /\.(?:mp4|webm)(?:[?#].*)?$/i.test(src);
   const visibleTech = technologies.slice(0, MAX_VISIBLE_TECH);
   const hiddenTechCount = technologies.length - visibleTech.length;
 
@@ -44,7 +44,7 @@ export default function ProjectCard({
       <div className="relative aspect-video w-full overflow-hidden">
         {isVideo ? (
           <video
-            src={image}
+            src={src}
             autoPlay
             loop
             muted
