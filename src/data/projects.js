@@ -35,6 +35,42 @@ export const projects = [
     demo: "https://www.clearup.skin/",
   },
   {
+    title: "Spacetime Dojo",
+    category: "Hackathon",
+    href: "https://youtu.be/TXRZh1yjFeg",
+    description:
+      "At Cal Hacks v13, our team built a real-time multiplayer motion-controlled boxing game. Features a server-side combat engine on SpacetimeDB and 30 FPS MediaPipe pose tracking.",
+    image: temp,
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "Three.js",
+      "Bun",
+      "SpacetimeDB",
+      "MediaPipe",
+      "Blender",
+    ],
+    demo: "https://youtu.be/TXRZh1yjFeg",
+  },
+  {
+    title: "Orca-CTL",
+    category: "Hackathon",
+    href: "https://youtu.be/W0umiOq4xsg?si=QHc0KPg5jCnkGIYL",
+    description:
+      "For Hack the North 2026, we built an IP-KVM remote server recovery system bridging a Raspberry Pi to low-latency MJPEG video, with an OpenAI Vision agent for autonomous recovery.",
+    image: temp,
+    technologies: [
+      "Go",
+      "Gin",
+      "TypeScript",
+      "Next.js",
+      "OpenAI Vision",
+      "WebSockets",
+      "MJPEG",
+    ],
+    demo: "https://youtu.be/W0umiOq4xsg?si=QHc0KPg5jCnkGIYL",
+  },
+  {
     title: "Luna at The Perimenopause Lab",
     category: "Work",
     href: "https://www.perimenopauselab.com",
@@ -114,6 +150,23 @@ export const projects = [
     demo: "",
   },
   {
+    title: "UofTHacks Judging Scheduler",
+    category: "Work",
+    href: "https://uofthacks.com/",
+    description:
+      "Refactored the judging scheduling workflow in FastAPI for UofTHacks 14, automating sponsor track sync with handshake tokens and adding after-deadline project append for 750+ hackers.",
+    image: temp,
+    technologies: [
+      "FastAPI",
+      "Python",
+      "Astro",
+      "TypeScript",
+      "Three.js",
+      "Algorithms",
+    ],
+    demo: "https://uofthacks.com/",
+  },
+  {
     title: "Hangar District Storefront Walkway",
     category: "Work",
     href: "https://youtu.be/2_Pt8QzRSYk",
@@ -176,6 +229,22 @@ export const projects = [
   //   technologies: ["Godot", "Blender", "Aseprite"],
   //   github: "https://github.com/sciausu/Ctrl-Hack-Del",
   // },
+  {
+    title: "Themed Itinerary Generator",
+    category: "Personal",
+    href: "https://github.com/anthskti",
+    description:
+      "A graph-based trip planner using the Yelp Open Dataset, modeling 26k+ spots with Personalized PageRank and 2-opt TSP heuristics to generate coherent day plans.",
+    image: temp,
+    technologies: [
+      "Python",
+      "NetworkX",
+      "Personalized PageRank",
+      "NLP",
+      "Algorithms",
+    ],
+    github: "https://github.com/anthskti",
+  },
   {
     title: "Trace",
     category: "Personal",
