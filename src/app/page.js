@@ -122,18 +122,18 @@ export default function About() {
                         Clearup
                       </Link>
                     </span>
-                    {": "}A skincare organizer where users compare real sellers
-                    prices and build + share personalized routines.
+                    , a skincare routine organizer where users compare real
+                    sellers prices and build + share personalized routines.
                   </ArrowItem>
 
                   <ArrowItem>
-                    <Link href="" className="font-bold">
-                      Code Review Agent
+                    At{" "}
+                    <Link href="https://uofthacks.com/" className="font-bold">
+                      UofTHacks
                     </Link>
-                    {": "}
-                    In a new world that ships fast, an agentic ai pipeline that
-                    reviews Github PR requests, generating a pull request
-                    report.
+                    , contributed to the judging pipeline through, designing a
+                    new input pipeline and refracted the algorithm to support
+                    after deadline inputs. Also helped with 3D main page.
                   </ArrowItem>
 
                   {/* <ArrowItem>
@@ -183,11 +183,19 @@ export default function About() {
                         className="object-contain relative top-[2px]"
                       /> */}
                       <Link
-                        href="https://www.northcrestdev.ca/"
+                        href="https://luna.perimenopauselab.com"
                         className="font-bold"
                       >
                         The Perimenopause Lab
                       </Link>
+                    </span>
+                    <span className="ml-2 mt-1 mb-4 block leading-relaxed text-zinc-700 dark:text-zinc-300">
+                      Built a recommendation system and professional directory
+                      for Luna, a women's health platform.{" "}
+                      <Link href="/writing/luna-pmlabs">
+                        Read about the internship
+                      </Link>
+                      .
                     </span>
                   </ArrowItem>
                   <ArrowItem>

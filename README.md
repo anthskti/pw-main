@@ -1,5 +1,5 @@
 # Anthony Pham's Personal Website
 
-Learn more about who i am.
+Learn more about who I am.
 
-Run it with `bun dev` :)
+Run it with `bun dev`
